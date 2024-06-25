@@ -1,0 +1,145 @@
+.horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.horizontal li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.horizontal li:last-child {
+  margin-right: 0;
+}
+
+.horizontal li a {
+  display: inline-block;
+  padding: 10px;
+  color: #0b0b0b;
+  background-color: #0d0d0d80;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #0b0b0b;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #424242;
+}
+
+/* Termina el css del navbar del menú */
+
+/* Código del item de la app */
+.container {
+  overflow: auto;
+  margin-left: 20px;
+}
+
+.logo {
+  float: left;
+  margin-right: 20px;
+  max-width: 10%;
+  height: auto;
+  border-radius: 10%;
+}
+
+.content {
+  overflow: auto;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+
+p {
+  margin-top: 10px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .navbar li {
+    float: none;
+    text-align: center;
+  }
+
+  .horizontal {
+    float: none;
+    text-align: center;
+  }
+
+  .horizontal li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .logo {
+    max-width: 20%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .container {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar li a {
+    padding: 10px;
+  }
+}
