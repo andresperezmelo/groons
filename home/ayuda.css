@@ -1,41 +1,32 @@
-.horizontal {
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Estilos del navbar */
+.navbar {
+  background-color: #0b0b0b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul.horizontal {
   list-style: none;
   margin: 0;
   padding: 0;
-  float: right;
-}
-
-.horizontal li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.horizontal li:last-child {
-  margin-right: 0;
-}
-
-.horizontal li a {
-  display: inline-block;
-  padding: 10px;
-  color: #0b0b0b;
-  background-color: rgba(13, 13, 13, 0.5);
-  text-decoration: none;
-}
-
-
-.navbar {
-  background-color: #0b0b0b;
-  overflow: hidden;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar li {
-  float: left;
+  margin: 0;
 }
 
 .navbar li a {
@@ -44,12 +35,60 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .navbar li a:hover {
   background-color: #424242;
 }
 
-/*
-termina el css del navbar del menu
-*/
+.navbar li a[style*="color: #50b7fb"] {
+  color: #50b7fb !important;
+}
+
+/* Estilos del encabezado */
+.header {
+  background-color: #f5f5f5;
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 60px;
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* Estilos de los botones de contacto */
+.buttons-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.modern-btn {
+  display: inline-block;
+  font-size: 24px;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #007BFF;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.modern-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.email-btn {
+  background-color: #D44638;
+}

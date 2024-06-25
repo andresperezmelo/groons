@@ -49,3 +49,11 @@ ul {
 p {
     margin-bottom: 1rem;
 }
+
+.last-updated {
+    font-size: 0.8em;
+    color: #7f8c8d;
+    text-align: right;
+    margin-top: 30px;
+    font-style: italic;
+}

@@ -1,40 +1,30 @@
-.horizontal {
-  list-style: none;
+/* Estilos generales */
+body {
   margin: 0;
   padding: 0;
-  float: right;
+  font-family: Arial, sans-serif;
 }
 
-.horizontal li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.horizontal li:last-child {
-  margin-right: 0;
-}
-
-.horizontal li a {
-  display: inline-block;
-  padding: 10px;
-  color: #0b0b0b;
-  background-color: #0d0d0d80;
-  text-decoration: none;
-}
-
+/* Estilos del navbar */
 .navbar {
   background-color: #0b0b0b;
-  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.navbar ul {
+.navbar ul.horizontal {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar li {
-  float: left;
+  margin: 0;
 }
 
 .navbar li a {
@@ -43,103 +33,148 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .navbar li a:hover {
   background-color: #424242;
 }
 
-/* Termina el css del navbar del menú */
-
-/* Código del item de la app */
-.container {
-  overflow: auto;
-  margin-left: 20px;
+/* Estilo específico para el enlace "Inicio" */
+.navbar li a[onclick="Inicio"] {
+  color: rgb(80, 183, 251);
 }
 
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .navbar ul.horizontal {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    width: 100%;
+  }
+
+  .navbar li a {
+    border-bottom: 1px solid #333;
+  }
+}
+
+/* Termina el codigo del snavbar */
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Estilos del logo */
 .logo {
   float: left;
   margin-right: 20px;
-  max-width: 10%;
+  max-width: 100px;
   height: auto;
   border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos del contenido */
 .content {
-  overflow: auto;
+  overflow: hidden;
 }
 
 h1 {
-  margin-top: 20px;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.btn:last-child {
-  margin-right: 0;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 p {
-  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
-a {
-  color: #007BFF;
+/* Estilo de la apps*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
   text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos de los enlaces */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
+  color: #d5dee4;
   text-decoration: underline;
 }
 
 /* Media Queries para responsividad */
 @media (max-width: 768px) {
-  .navbar li {
-    float: none;
-    text-align: center;
-  }
-
-  .horizontal {
-    float: none;
-    text-align: center;
-  }
-
-  .horizontal li {
-    display: block;
-    margin: 5px 0;
+  .container {
+    padding: 20px;
   }
 
   .logo {
-    max-width: 20%;
+    float: none;
     display: block;
     margin: 0 auto 20px;
   }
 
-  .container {
-    margin-left: 0;
-    padding: 0 10px;
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .btn {
-    display: block;
-    margin: 10px 0;
+  body {
+    padding: 10px;
   }
 
-  .navbar li a {
-    padding: 10px;
+  .container {
+    padding: 15px;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  h1 {
+    font-size: 24px;
   }
 }

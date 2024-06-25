@@ -12,15 +12,14 @@
 
     <nav class="navbar">
         <ul class="horizontal">
-            <li><a style="color: rgb(80, 183, 251);" href="#" onclick="Inicio">Inicio</a></li>
-            <li><a href="home/politicas.html" onclick="Politicas">Políticas</a></li>
-            <li><a href="home/ayuda.html" onclick="Ayuda">Ayuda</a></li>
+            <li><a href="#" onclick="Inicio()">Inicio</a></li>
+            <li><a href="home/politicas.html" onclick="Politicas()">Políticas</a></li>
+            <li><a href="home/ayuda.html" onclick="Ayuda()">Ayuda</a></li>
         </ul>
     </nav>
 
     <!--codigo de inicio-->
-
-    <div style="background-color: #f5f5f5;">
+    <div style="background-color: #f5f5f5; margin-top: 60px;">
         <br><br>
         <h1 style="text-align: center; font-size: 100px; margin-bottom: 0; margin-top: 0;">
             <strong>
@@ -32,12 +31,11 @@
                 Empresa dedicada a desarrollo de sistemas.
             </strong>
         </h4>
-        <br><br>
     </div>
 
-    <br> <br> <br>
+    <br>
 
-    <div style="overflow:auto; margin-left: 20px;">
+    <div class="container">
         <img src="assets/prestabit_logo.jpeg" class="logo">
         <div style="overflow:auto">
             <h1>PrestaBIT</h1>
@@ -45,8 +43,9 @@
             <a href="https://play.google.com/store/apps/details?id=app.web.groons.prestabit" class="btn">Android</a>
             <a href="https://apps.apple.com/ca/app/prestabit/id1671026232" class="btn">iOS</a>
             <a href="https://prestabiit.web.app/#/" class="btn">WEB</a>
-            <a href="prestabit/precios/precios.html" class="btn">Precios</a>
+            <a href="apps/prestabit/precios/precios.html" class="btn">Precios</a>
             <p><a href="https://youtube.com/playlist?list=PLYxks4gmKTH62jY_tSJae9X1eCvxGiXnq">Videos de ayuda</a></p>
+            <p><a href="apps/prestabit/politicas/politicas.html">Politicas de privacidad</a></p>
         </div>
     </div>
 
@@ -63,7 +62,7 @@
                 <a href="https://play.google.com/store/apps/details?id=colombia.ancorp.prestacop"
                     class="btn">Android</a>
                 <a href="https://prestacop.web.app/" class="btn">WEB</a>
-                <a href="prestacop/precios/precios.html" class="btn">Precios</a>
+                <a href="apps/prestacop/precios/precios.html" class="btn">Precios</a>
             </div>
             <p><a href="https://youtube.com/playlist?list=PL04YCvShXzzknp84HSY-zdbp7I7L_P6Pz">Videos de ayuda</a></p>
             <p><a href="https://ayudaprestacop.web.app/#page-top">Página de ayuda</a></p>
@@ -74,13 +73,16 @@
 
     <br> <br> <br>
 
-    <div style="overflow:auto; margin-left: 20px;">
-        <img src="assets/pgroons_logo.jpeg" class="logo">
-        <div style="overflow:auto">
-            <h1>PrestaGroonS</h1>
-            <p style="margin-top:20px;">Sistema que funciona para administrar sus préstamos.</p>
-            <a href="https://play.google.com/store/apps/details?id=app.web.groons.prestagroons" class="btn">Android</a>
-            <p><a href="https://groonsayuda.blogspot.com/?m=1">Página de ayuda</a></p>
+    <div class="container">
+        <div style="overflow:auto; margin-left: 20px;">
+            <img src="assets/pgroons_logo.jpeg" class="logo">
+            <div style="overflow:auto">
+                <h1>PrestaGroonS</h1>
+                <p style="margin-top:20px;">Sistema que funciona para administrar sus préstamos.</p>
+                <a href="https://play.google.com/store/apps/details?id=app.web.groons.prestagroons"
+                    class="btn">Android</a>
+                <p><a href="https://groonsayuda.blogspot.com/?m=1">Página de ayuda</a></p>
+            </div>
         </div>
     </div>
 
@@ -88,13 +90,32 @@
 
     <br> <br> <br>
 
-    <div style="overflow:auto; margin-left: 20px;">
-        <img src="assets/bills_logo.png" class="logo">
-        <div style="overflow:auto">
-            <h1>Bills</h1>
-            <p style="margin-top:20px;">Sistema para control de ingresos y gastos.</p>
-            <!--<a href="https://play.google.com/store/apps/details?id=app.web.groons.prestagroons" class="btn">Android</a> -->
-            <p><a href="">Proximamente</a></p>
+    <div class="container">
+        <div style="overflow:auto; margin-left: 20px;">
+            <img src="assets/jsonexplorer_logo.png" class="logo">
+            <div style="overflow:auto">
+                <h1>Explorer big Json & Sqlite db</h1>
+                <p style="margin-top:20px;">Aplicacion para explorar archivos json grandes y base de datos sqlite.</p>
+                <a href="https://play.google.com/store/apps/details?id=app.web.groons.jsonexplorer&hl=en_US"
+                    class="btn">Android</a>
+                <p><a href="apps/explorerjson/politicas/politicas.html">Politicas de privacidad</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--aqui termina el codigo de PrestaGroonS-->
+
+    <br> <br> <br>
+
+    <div class="container">
+        <div style="overflow:auto; margin-left: 20px;">
+            <img src="assets/bills_logo.png" class="logo">
+            <div style="overflow:auto">
+                <h1>Bills</h1>
+                <p style="margin-top:20px;">Sistema para control de ingresos y gastos.</p>
+                <!--<a href="https://play.google.com/store/apps/details?id=app.web.groons.prestagroons" class="btn">Android</a> -->
+                <p><a href="">Proximamente</a></p>
+            </div>
         </div>
     </div>
 
