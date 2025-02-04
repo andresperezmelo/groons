@@ -1,0 +1,7 @@
+{
+"sin_login_hasta": "",
+"proximo_mantimiento": "",
+"message_aviso: "",
+"en_mantenimiento": false,
+"message_mantimiento": "",
+}
