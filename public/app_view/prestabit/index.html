@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sistems Andres Perez melo.">
+    <meta name="author" content="Andres Perez Melo">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <!-- Webpage Title -->
+    <title>PrestaBIT</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="../../assets/img/favicon.ico">
+
+    <style>
+        /* Estilos generales */
+        .card {
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+            transition: box-shadow 0.3s ease-in-out;
+            border: 1px solid #ddd;
+            /* Borde sutil */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Planes en desktop en una fila, en móviles con espacio entre ellos */
+        .row>div {
+            margin-bottom: 20px;
+        }
+
+        .plan-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .container-custom {
+            max-width: 1000px;
+        }
+
+        /* estilo de la imagenes */
+        img {
+            border-radius: 15px;
+        }
+
+        .imagen-estilizada {
+            width: 90vh;
+            height: auto;
+            /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+            border-radius: 15px;
+            /* Esquinas redondeadas */
+            /*box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            /* Sombra */
+            transform: rotate(-5deg);
+            /* Rotación */
+            transition: transform 0.3s;
+            /* Transición suave */
+        }
+
+        .imagen-estilizada:hover {
+            transform: rotate(0deg);
+            /* Sin rotación al pasar el cursor */
+        }
+
+        /* Media query para dispositivos móviles */
+        @media (max-width: 768px) {
+            .imagen-estilizada {
+                width: 40vh;
+                /* Tamaño más pequeño para móviles */
+            }
+        }
+
+        /* Swiper desktop */
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Sync</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html">
+                <a class="btn-solid-reg" href="../../index.html">VOLVER</a>
+                <h1>PrestaBIT</h1>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#description">DESCRIPCION <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#screens">CAPTURAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#precios">PRECIOS</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">POLITICAS</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMINOS Y
+                                    CONDICIONES</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">POLITICA DE
+                                    PRIVACIDAD</span></a>
+                        </div>
+                    </li>
+                    <!-- end of dropdown menu -->
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm page-scroll" href="#download">DESCARGAR</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h1>PrestaBIT</h1>
+                        <p class="p-large p-heading">Administre sus prestamos personales, vea quien esta atrasado,
+                            vencido y pongale fecha de pago, disponible en Android, IOS y web.</p>
+                        <a class="btn-solid-lg" href="https://apps.apple.com/co/app/prestabit/id1671026232"><i
+                                class="fab fa-apple"></i>DESCARGAR</a>
+                        <a class="btn-solid-lg"
+                            href="https://play.google.com/store/apps/details/PrestaBIT?id=app.web.groons.prestabit&hl=es_CO"><i
+                                class="fab fa-google-play"></i>DESCARGAR</a>
+                        <a class="btn-solid-lg" href="https://prestabiit.web.app/"><i class="fab fa-chrome"></i>WEB</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="image-container imagen-estilizada">
+                        <img class="img-fluid" src="../../assets/img/prestabit/banner_prestabit.png" alt="alternative">
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <div class="deco-white-circle-1">
+            <img src="../images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-1 -->
+        <div class="deco-white-circle-2">
+            <img src="../images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-2 -->
+        <div class="deco-blue-circle">
+            <img src="../images/decorative-blue-circle.svg" alt="alternative">
+        </div> <!-- end of deco-blue-circle -->
+        <div class="deco-yellow-circle">
+            <img src="../images/decorative-yellow-circle.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+        <div class="deco-green-diamond">
+            <img src="../images/decorative-green-diamond.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <!-- Description 1 -->
+    <div id="description" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container" style="width: 30vh;">
+                        <img class="img-fluid" src="../../assets/img/prestabit/caracteristica.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Organice sus prestamos y sus cobradores</h2>
+                        <p>PrestaBIT le permite agregar, editar, eliminar clientes en varias modalidades, establesca
+                            fecha de pago, direcciones, ubicaciones.</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Modalidades: Diario, Interdiario, Semanal, Quincenal, Mensual,
+                                    personalizado, Consecutivo.</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Consecutivo: Preste y cobre solo interes o capital</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Si no cobrar sabados o domingos habilite bo cobrar sabados o
+                                    domingos</div>
+                            </li>
+                        </ul>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#description-1-details-lightbox">VER MAS</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of description 1 -->
+
+
+    <!-- Description 1 Details Lightbox -->
+    <!-- Details Lightbox -->
+    <div id="description-1-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="../images/description-1-details-lightbox.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div>
+            <div class="col-lg-4">
+                <h3>Mejores caracteristicas</h3>
+                <hr>
+                <p>Las mejores caracteristicas de PrestaBIT.</p>
+                <h4>Lo mas destacado</h4>
+                <p>Se detallan algunas caracteristicas de PrestaBIT.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="far fa-check-square"></i>
+                        <div class="media-body">Varia de modalidades de prestamos</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i>
+                        <div class="media-body">Tabla de amortizacion</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i>
+                        <div class="media-body">Establecer fecha de pago, y ver los clientes para el dia.</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i>
+                        <div class="media-body">Ver el total a cobrar en el dia.</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i>
+                        <div class="media-body">Trabajar en multiples dispositivos a la vez sitiene le plan ORO</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" href="#download">DESCARGAR</a> <button
+                    class="btn-outline-reg mfp-close as-button" type="button">VOLVER</button>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+    <!-- end of description 1 details lightbox -->
+
+
+    <!-- Screenshots moviles -->
+    <div id="screens" class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/ajuses_empresa.jpeg" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/ajuses_empresa.jpeg"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/ajustes.jpeg" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/ajustes.jpeg"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/balances.jpeg" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/balances.jpeg"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/copias.jpeg" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/copias.jpeg"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/copias2.jpeg" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/copias2.jpeg"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/grupos.jpeg" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/grupos.jpeg"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/login.jpeg" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/login.jpeg"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/permisos.jpeg" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/permisos.jpeg"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider -->
+    <!-- end of screenshots -->
+
+    <!-- Screenshots desktop -->
+    <div id="screens" class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider" id="slider-photos-desktop">
+                            <div class="swiper-wrapper">
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/desktop1.png" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/desktop1.png"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/desktop2.png" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/desktop2.png"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/desktop3.png" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/desktop3.png"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/desktop4.png" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/desktop4.png"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/desktop5.png" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/desktop5.png"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/prestabit/desktop6.png" class="popup-link"
+                                        data-effect="fadeIn">
+                                        <img class="img-fluid" src="../../assets/img/prestabit/desktop6.png"
+                                            alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider -->
+    <!-- end of screenshots -->
+
+
+    <!-- PLanes -->
+    <section id="precios" class="py-5">
+        <div class="container container-custom">
+            <div class="row text-center mb-4">
+                <div class="col-lg-12">
+                    <h2 class="fw-bold">Nuestros Planes</h2>
+                    <p class="text-muted">Elige el plan que mejor se adapte a tus necesidades</p>
+                </div>
+            </div>
+            <div class="row row-cols-4 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- Plan GRATIS -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="plan-title text-center">GRATIS</h3>
+                            <p class="text-center">Acceso limitado</p>
+                            <i class="fas fa-lock fa-2x mx-auto mb-3"></i>
+                            <ul class="list-unstyled li-space-lg flex-grow-1">
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Clientes ilimitados</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Ver resumen del día</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Compartir recibos</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Imprimir recibos</div>
+                                </li>
+                            </ul>
+                            <p class="price mt-auto text-center">Costo: $0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan BRONCE -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="plan-title text-center">BRONCE</h3>
+                            <p class="text-center">Acceso en Android</p>
+                            <i class="fab fa-android fa-2x mx-auto mb-3"></i>
+
+                            <ul class="list-unstyled li-space-lg flex-grow-1">
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Todo lo del plan GRATIS</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Acceso completo Android</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Balances de cartera</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Personalizar contrato</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Agregar logo empresa, etc.</div>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center mt-auto">
+                                <div class="text-center px-3">
+                                    <p class="fw-bold mb-1">Mes</p>
+                                    <p class="price">$2 USD</p>
+                                </div>
+                                <div class="vr mx-3"></div>
+                                <div class="text-center px-3">
+                                    <p class="fw-bold mb-1">Año</p>
+                                    <p class="price">$15 USD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan PLATA -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="plan-title text-center">PLATA</h3>
+                            <p class="text-center">Acceso en Android y iPhone</p>
+                            <div class="row">
+                                <i class="fab fa-android fa-2x mx-auto mb-3"></i>
+                                <i class="fab fa-apple fa-2x mx-auto mb-3"></i>
+                            </div>
+                            <ul class="list-unstyled li-space-lg flex-grow-1">
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Todo lo del plan GRATIS</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Todo lo del plan BRONCE</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Acceso completo iOS</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Balances de cartera</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Personalizar contrato</div>
+                                </li>
+                                <li class="media d-flex align-items-center mb-2">
+                                    <i class="far fa-check-square me-2"></i>
+                                    <div class="media-body">Agregar logo empresa, etc.</div>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center align-items-center mt-auto">
+                                <div class="text-center px-3">
+                                    <p class="fw-bold mb-1">Mes</p>
+                                    <p class="price">$3 USD</p>
+                                </div>
+                                <div class="vr mx-3"></div>
+                                <div class="text-center px-3">
+                                    <p class="fw-bold mb-1">Año</p>
+                                    <p class="price">$20 USD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan ORO -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="plan-title text-center">ORO</h3>
+                            <p class="text-center">Android, iPhone y Web</p>
+                            <div class="row">
+                                <i class="fab fa-android fa-2x mx-auto mb-3"></i>
+                                <i class="fab fa-apple fa-2x mx-auto mb-3"></i>
+                                <i class="fas fa-globe fa-2x mx-auto mb-3"></i>
+                            </div>
+
+                            <div class="media-body">Acceso completo a Android, iOS y Web</div>
+                            <div class="media-body">Incluye todo lo GRATIS</div>
+                            <div class="media-body">Incluye todo lo del plan BRONCE</div>
+                            <div class="media-body">Incluye todo lo del plan PLATA</div>
+                            <div class="media-body">Acceso completo a la Web</div>
+                            <div class="media-body">Sincronización en tiempo real</div>
+                            <div class="media-body">Puede tener cobradores, secretarias, y crearle a cada uno su cuenta
+                                con sus permisos</div>
+
+                            <p class="price mt-auto text-center">Suscripción única: $10 USD</p>
+                            <p class="price text-center">Mensual por cliente: $0.03 USD</p>
+                            <div class="d-flex justify-content-center align-items-center mt-3">
+                                <div class="text-center px-3">
+                                    <p class="fw-bold mb-1">Mínimo</p>
+                                    <p class="price">$3 USD (hasta 100 clientes)</p>
+                                </div>
+                                <div class="text-center px-3">
+                                    <p class="fw-bold mb-1">de 101 a 999 clientes</p>
+                                    <p class="price">$0.03 USD (por cliente)</p>
+                                </div>
+                                <div class="vr mx-3"></div>
+                                <div class="text-center px-3">
+                                    <p class="fw-bold mb-1">MÁXIMO MES</p>
+                                    <p class="price">$30 USD (más de 1000 clientes)</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="text-center">Si tiene 100 clientes paga 3 dolares, si tiene 200 clientes 6
+                                dolares.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of PLanes -->
+
+    <!-- Download -->
+    <div id="download" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="img-fluid" src="../../assets/img/prestabit/banner_prestabit.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                    <p class="p-large">No espere mas y descargue la aplicación PrestaBIT para iOS y Android o inicie
+                        sesion en la web si tiene el plan ORO</p>
+                    <a class="btn-solid-lg" href="https://apps.apple.com/co/app/prestabit/id1671026232"><i
+                            class="fab fa-apple"></i>DOWNLOAD</a>
+                    <a class="btn-solid-lg"
+                        href="https://play.google.com/store/apps/details/PrestaBIT?id=app.web.groons.prestabit&hl=es_CO"><i
+                            class="fab fa-google-play"></i>DOWNLOAD</a>
+                    <a class="btn-solid-lg" href="https://prestabiit.web.app/"><i class="fab fa-chrome"></i>WEB</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <div class="deco-white-circle-1">
+            <img src="../images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-1 -->
+        <div class="deco-white-circle-2">
+            <img src="../images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-2 -->
+        <div class="deco-blue-circle">
+            <img src="../images/decorative-blue-circle.svg" alt="alternative">
+        </div> <!-- end of deco-blue-circle -->
+        <div class="deco-yellow-circle">
+            <img src="../images/decorative-yellow-circle.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+        <div class="deco-green-diamond">
+            <img src="../images/decorative-green-diamond.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of download -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h5>Informacion PrestaBIT</h5>
+                        <p class="p-small">Sistema facil de usar para gestionar sus prestamos personales.</p>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h5>Contacto</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">Carrera 6 # SN-SN</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a
+                                        href="mailto:groonscolombia@gmail.com">groonscolombia@gmail.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="media-body"><a href="tel:573504706990">+57 3504706990</a></div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <h5>Links de interes</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li><a href="terms-conditions.html">Términos y Condiciones</a></li>
+                            <li><a href="privacy-policy.html">Politica de Privacidad</a></li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col fourth">
+                        <h5>Otras Apps</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li><a href="../prestacop/index.html">PrestaCOP</a></li>
+                            <li><a href="../puntoventa/index.html">PuntoVenta</a></li>
+                            <li><a href="../servimesa/index.html">Servimesa</a></li>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col fifth">
+                        <span class="fa-stack">
+                            <a href="https://www.youtube.com/playlist?list=PLYxks4gmKTH62jY_tSJae9X1eCvxGiXnq">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2025 <a href="../../index.html">APM</a> - Todos los derechos
+                        reservados</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+
+</html>
