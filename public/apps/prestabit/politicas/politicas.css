@@ -1,59 +1,570 @@
-body {
-    font-family: sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+:root {
+    /* Paleta Principal - Estilo Fintech */
+    --primary: #059669;
+    --primary-hover: #047857;
+    --primary-soft: #ecfdf5;
+    --accent: #2563eb;
+    --dark: #0f172a;
+    --dark-muted: #64748b;
+    --gray-light: #f8fafc;
+    --border: #e2e8f0;
+    --card-bg: #ffffff;
+
+    /* Estados y Alertas */
+    --danger-bg: #fef2f2;
+    --danger-border: #fecaca;
+    --danger-text: #991b1b;
+    --warning-bg: #fffbeb;
+    --warning-border: #fde68a;
+    --warning-text: #b45309;
+
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --radius-lg: 16px;
+    --radius-md: 10px;
+    --radius-sm: 6px;
+    --shadow-main: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    background-color: #fff;
-    padding: 2rem;
-    margin: 2rem auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 90%;
+body {
+    background-color: var(--gray-light);
+    color: var(--dark);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3 {
-    color: #4CAF50;
+.page-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
 }
 
-h1 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 0.5rem;
+/* Encabezado */
+.hero-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.brand-pill {
+    display: inline-block;
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
     margin-bottom: 1rem;
+    border: 1px solid #d1fae5;
 }
 
-li {
+.hero-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--dark);
+    margin-bottom: 0.75rem;
+}
+
+.hero-subtext {
+    color: var(--dark-muted);
+    font-size: 1.05rem;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Tarjeta contenedora */
+.content-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-main);
+    padding: 3rem;
+}
+
+/* Aviso Legal Superior */
+.legal-banner {
+    display: flex;
+    gap: 1.25rem;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--dark);
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 2.5rem;
+}
+
+.legal-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.legal-content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.3rem;
+}
+
+.legal-content p {
+    font-size: 0.9rem;
+    color: var(--dark-muted);
+    margin: 0;
+}
+
+/* Secciones */
+.policy-section {
+    margin-bottom: 3rem;
+}
+
+.policy-section h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.85rem;
+}
+
+.policy-section p {
+    color: #334155;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: var(--dark-muted);
+}
+
+/* Chips informativos */
+.info-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.chip {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+/* Grid de Planes de Suscripción */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.pricing-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.75rem 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary);
+    background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 40%);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -11px;
+    right: 16px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.card-header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.tier-name {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--dark-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.price {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--dark);
+    margin-top: 0.25rem;
+}
+
+.features-list {
+    list-style: none;
+    font-size: 0.88rem;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.features-list li.negative {
+    color: var(--danger-text);
+    background: var(--danger-bg);
+    padding: 0.5rem 0.65rem;
+    border-radius: var(--radius-sm);
+}
+
+.features-list li.warning {
+    color: var(--warning-text);
+    background: var(--warning-bg);
+    padding: 0.5rem 0.65rem;
+    border-radius: var(--radius-sm);
+}
+
+.features-list li.highlight {
+    color: #065f46;
+    background: #d1fae5;
+    padding: 0.5rem 0.65rem;
+    border-radius: var(--radius-sm);
+}
+
+/* Tabla de Clientes */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 1.25rem 0 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: #ffffff;
+}
+
+.clients-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.clients-table th {
+    background-color: #f8fafc;
+    color: var(--dark-muted);
+    font-weight: 600;
+    padding: 0.85rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.clients-table td {
+    padding: 0.8rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+    color: #334155;
+    vertical-align: middle;
+}
+
+.clients-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.clients-table tbody tr:hover {
+    background-color: #fcfdfe;
+}
+
+.table-highlight {
+    background-color: #f0fdf4 !important;
+}
+
+.price-pill {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--dark);
+    background: #f1f5f9;
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.price-pill.fixed {
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 0.92rem;
+}
+
+.badge-flat {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1e40af;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* Caja de Política de Alto Volumen y Escalabilidad */
+.fair-use-box {
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 1.1rem 1.25rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #475569;
+}
+
+.fair-use-title {
+    font-weight: 700;
+    color: var(--dark) !important;
+    margin-bottom: 0.4rem !important;
+}
+
+.fair-use-box p {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.fair-use-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Grid de Add-ons */
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.addon-card {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.addon-badge {
+    align-self: flex-start;
+    background: #e2e8f0;
+    color: var(--dark);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.addon-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.addon-price {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 0.4rem 0 0.8rem;
+}
+
+.addon-price span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--dark-muted);
+}
+
+.addon-desc {
+    font-size: 0.85rem;
+    color: var(--dark-muted);
     margin-bottom: 0.5rem;
 }
 
-a {
-    color: #4CAF50;
+.addon-card ul {
+    list-style: square;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: #334155;
+    margin-top: auto;
+}
+
+/* Alerta de Inactividad */
+.alert-box.danger {
+    background: var(--danger-bg);
+    border: 1px solid var(--danger-border);
+    border-left: 5px solid #dc2626;
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+}
+
+.alert-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #7f1d1d;
+    margin-bottom: 0.5rem;
+}
+
+.alert-box hr {
+    border: 0;
+    border-top: 1px dashed var(--danger-border);
+    margin: 1rem 0;
+}
+
+.alert-footer {
+    font-size: 0.9rem;
+    color: #7f1d1d;
+    margin: 0;
+}
+
+/* Blindaje Legal */
+.legal-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.legal-item {
+    background: #fcfcfd;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 1.1rem 1.25rem;
+}
+
+.legal-item h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.35rem;
+}
+
+.legal-item p {
+    font-size: 0.85rem;
+    color: var(--dark-muted);
+    margin: 0;
+}
+
+/* Soporte y CTA */
+.support-box {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.support-box h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.35rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.92rem;
+    font-weight: 600;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+.btn-whatsapp {
+    background: #25d366;
+    color: #ffffff;
 }
 
-p,
-ul {
-    line-height: 1.6;
+.btn-whatsapp:hover {
+    background: #1eb857;
+    transform: translateY(-2px);
 }
 
-p {
-    margin-bottom: 1rem;
+.btn-secondary {
+    background: #ffffff;
+    color: var(--dark);
+    border: 1px solid var(--border);
 }
 
-.last-updated {
-    font-size: 0.8em;
-    color: #7f8c8d;
-    text-align: right;
-    margin-top: 30px;
-    font-style: italic;
+.btn-secondary:hover {
+    background: #f1f5f9;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: var(--dark-muted);
+    text-align: center;
+}
+
+.update-stamp {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-top: 0.35rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-card {
+        padding: 1.5rem;
+    }
+
+    .hero-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .legal-banner {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .pricing-grid,
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        justify-content: center;
+    }
 }
