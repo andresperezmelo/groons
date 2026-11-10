@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CobraX | Cobra préstamos y ventas a crédito</title>
+    <meta name="description"
+        content="CobraX de GroonS: la app diseñada para cobrar préstamos y ventas a crédito. Cuotas, mora, rutas, cobro sin conexión, recibos, contratos con firma, artículos con cuota inicial y portal de clientes.">
+    <meta name="theme-color" content="#FFC531">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/cobrax.css?v=2">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="brand"><span class="brand-badge"><i class="fa-solid fa-bolt"></i></span> CobraX</a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#dos-en-uno" class="nav-link">Préstamos y ventas</a>
+                <a href="#caracteristicas" class="nav-link">Características</a>
+                <a href="#galeria" class="nav-link">Capturas</a>
+                <a href="#planes" class="nav-link">Planes</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="../" class="nav-link"><i class="fa-solid fa-arrow-left"></i> GroonS</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20CobraX%20est%C3%A9%20disponible" target="_blank" class="btn btn-primary btn-sm"><i class="fa-regular fa-bell"></i> Avísame</a>
+                <button class="menu-btn" id="menu-btn" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="chip"><i class="fa-solid fa-rocket"></i> Muy pronto en Android y iOS</div>
+                    <h1>Diseñado para cobrar <span class="hl">préstamos</span> y <span class="hl">ventas a crédito</span>.</h1>
+                    <p>Si prestas plata o vendes muebles, electrodomésticos o celulares a cuotas, CobraX lleva tu cartera,
+                        calcula las cuotas y la mora, y le da a tu cobrador todo lo que necesita en la calle, incluso
+                        sin señal.</p>
+
+                    <div class="hero-buttons">
+                        <span class="btn btn-store is-soon"><i class="fa-brands fa-google-play"></i>
+                            <span class="btn-text"><small>Próximamente en</small><strong>Google Play</strong></span></span>
+                        <span class="btn btn-store is-soon"><i class="fa-brands fa-apple"></i>
+                            <span class="btn-text"><small>Próximamente en</small><strong>App Store</strong></span></span>
+                        <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20CobraX%20est%C3%A9%20disponible" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i>
+                            Avísame del lanzamiento</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item"><h4>15 días</h4><p>Prueba gratis, sin tarjeta</p></div>
+                        <div class="stat-item"><h4>Desde $5</h4><p>USD al mes</p></div>
+                        <div class="stat-item"><h4>Sin señal</h4><p>Cobra igual en la calle</p></div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="device-mockup">
+                        <div class="mockup-screen"><img src="assets/img/1.jpeg" alt="CobraX: inicio"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dos en uno -->
+        <section class="duo-section" id="dos-en-uno">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Dos negocios, una sola app</span>
+                    <h2>Cobra préstamos de dinero y ventas a crédito en el mismo lugar</h2>
+                    <p>Una venta a crédito funciona igual que un préstamo: cuotas, abonos, mora, rutas, recibos y
+                        contratos. Cobras todo desde la misma lista, con el mismo cobrador.</p>
+                </div>
+
+                <div class="duo-grid">
+                    <article class="duo-card">
+                        <div class="duo-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <span class="duo-tag">Préstamos</span>
+                        <h3>Para prestamistas, natilleras y cooperativas</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Capital, interés, plazo y frecuencia</li>
+                            <li><i class="fa-solid fa-check"></i> Informal, francés, alemán o americano</li>
+                            <li><i class="fa-solid fa-check"></i> Mora diaria con días de gracia</li>
+                            <li><i class="fa-solid fa-check"></i> Cargos, seguro, fiador y garantías</li>
+                            <li><i class="fa-solid fa-check"></i> Tipos de préstamo listos para elegir</li>
+                        </ul>
+                        <div class="duo-example">
+                            <span>Ejemplo</span>
+                            <strong>$300.000 al 20% · 24 cuotas diarias de $15.000</strong>
+                        </div>
+                    </article>
+
+                    <div class="duo-plus"><i class="fa-solid fa-plus"></i></div>
+
+                    <article class="duo-card duo-dark">
+                        <div class="duo-icon"><i class="fa-solid fa-couch"></i></div>
+                        <span class="duo-tag">Ventas a crédito</span>
+                        <h3>Para almacenes que venden a cuotas</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Precio de contado y precio a crédito</li>
+                            <li><i class="fa-solid fa-check"></i> Cuota inicial y valor fijo de cada cuota</li>
+                            <li><i class="fa-solid fa-check"></i> Opciones semanal, quincenal y mensual</li>
+                            <li><i class="fa-solid fa-check"></i> Stock, serial o IMEI y margen de ganancia</li>
+                            <li><i class="fa-solid fa-check"></i> Comisión para vendedor y cobrador</li>
+                        </ul>
+                        <div class="duo-example">
+                            <span>Ejemplo</span>
+                            <strong>Armario: inicial $80.000 · 27 cuotas semanales de $25.000</strong>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="shared-box">
+                    <h3>Y para los dos, lo mismo:</h3>
+                    <div class="shared-grid">
+                        <span><i class="fa-solid fa-route"></i> Rutas y recorrido</span>
+                        <span><i class="fa-solid fa-wifi"></i> Cobro sin conexión</span>
+                        <span><i class="fa-solid fa-receipt"></i> Recibos e impresora</span>
+                        <span><i class="fa-solid fa-file-signature"></i> Contratos con firma</span>
+                        <span><i class="fa-solid fa-triangle-exclamation"></i> Mora y atrasados</span>
+                        <span><i class="fa-solid fa-globe"></i> Portal de clientes</span>
+                        <span><i class="fa-solid fa-vault"></i> Caja por ruta</span>
+                        <span><i class="fa-solid fa-chart-line"></i> Balances y ganancia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section class="gallery-section" id="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Así se ve CobraX</h2>
+                    <p>La galería se mueve sola. Pasa el cursor para pausarla y haz clic para ampliar.</p>
+                </div>
+            </div>
+            <div class="gallery-wrapper" id="gallery-wrapper">
+                <div class="gallery-track" id="gallery-track">
+                    <div class="gallery-card" data-index="1">
+                        <div class="card-inner"><img src="assets/img/1.jpeg" alt="CobraX: Inicio" loading="lazy"></div>
+                        <span>01 / Inicio</span>
+                    </div>
+                    <div class="gallery-card" data-index="2">
+                        <div class="card-inner"><img src="assets/img/2.jpeg" alt="CobraX: Clientes y atrasados" loading="lazy"></div>
+                        <span>02 / Clientes y atrasados</span>
+                    </div>
+                    <div class="gallery-card" data-index="3">
+                        <div class="card-inner"><img src="assets/img/3.jpeg" alt="CobraX: Cobrar con mora" loading="lazy"></div>
+                        <span>03 / Cobrar con mora</span>
+                    </div>
+                    <div class="gallery-card" data-index="4">
+                        <div class="card-inner"><img src="assets/img/4.jpeg" alt="CobraX: Recibo de abono" loading="lazy"></div>
+                        <span>04 / Recibo de abono</span>
+                    </div>
+                    <div class="gallery-card" data-index="5">
+                        <div class="card-inner"><img src="assets/img/5.jpeg" alt="CobraX: Nuevo préstamo" loading="lazy"></div>
+                        <span>05 / Nuevo préstamo</span>
+                    </div>
+                    <div class="gallery-card" data-index="6">
+                        <div class="card-inner"><img src="assets/img/6.jpeg" alt="CobraX: Nueva venta a crédito" loading="lazy"></div>
+                        <span>06 / Nueva venta a crédito</span>
+                    </div>
+                    <div class="gallery-card" data-index="7">
+                        <div class="card-inner"><img src="assets/img/7.jpeg" alt="CobraX: Opciones de cuotas" loading="lazy"></div>
+                        <span>07 / Opciones de cuotas</span>
+                    </div>
+                    <div class="gallery-card" data-index="8">
+                        <div class="card-inner"><img src="assets/img/8.jpeg" alt="CobraX: Cobro de una venta" loading="lazy"></div>
+                        <span>08 / Cobro de una venta</span>
+                    </div>
+                    <div class="gallery-card" data-index="9">
+                        <div class="card-inner"><img src="assets/img/9.jpeg" alt="CobraX: Artículos" loading="lazy"></div>
+                        <span>09 / Artículos</span>
+                    </div>
+                    <div class="gallery-card" data-index="10">
+                        <div class="card-inner"><img src="assets/img/10.jpeg" alt="CobraX: Tipos de préstamo" loading="lazy"></div>
+                        <span>10 / Tipos de préstamo</span>
+                    </div>
+                    <div class="gallery-card" data-index="11">
+                        <div class="card-inner"><img src="assets/img/11.jpeg" alt="CobraX: Balances" loading="lazy"></div>
+                        <span>11 / Balances</span>
+                    </div>
+                    <div class="gallery-card" data-index="12">
+                        <div class="card-inner"><img src="assets/img/12.jpeg" alt="CobraX: Resumen por ruta" loading="lazy"></div>
+                        <span>12 / Resumen por ruta</span>
+                    </div>
+                    <div class="gallery-card" data-index="13">
+                        <div class="card-inner"><img src="assets/img/13.jpeg" alt="CobraX: Portal: link privado del cliente" loading="lazy"></div>
+                        <span>13 / Portal: link privado del cliente</span>
+                    </div>
+                    <div class="gallery-card" data-index="14">
+                        <div class="card-inner"><img src="assets/img/14.jpeg" alt="CobraX: Portal: solicitar préstamo" loading="lazy"></div>
+                        <span>14 / Portal: solicitar préstamo</span>
+                    </div>
+                    <div class="gallery-card" data-index="15">
+                        <div class="card-inner"><img src="assets/img/15.jpeg" alt="CobraX: Ajustes y suscripción" loading="lazy"></div>
+                        <span>15 / Ajustes y suscripción</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulos -->
+        <section class="features" id="caracteristicas">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Todo lo que incluye CobraX</h2>
+                    <p>39 funciones organizadas en 6 módulos.</p>
+                </div>
+                <div class="modules-grid">
+                    <a href="#lista-prestamos" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3>Préstamos de dinero</h3>
+                        <p>Presta con las condiciones que usas siempre y deja que la app calcule las cuotas.</p>
+                        <span class="module-count">8 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-ventas" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <h3>Ventas a crédito</h3>
+                        <p>Vende muebles, electrodomésticos, celulares o lo que tengas, con cuota inicial y cuotas fijas.</p>
+                        <span class="module-count">7 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-cobro" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-motorcycle"></i></div>
+                        <h3>Cobro en ruta</h3>
+                        <p>Todo lo que el cobrador necesita en la calle, incluso sin señal.</p>
+                        <span class="module-count">8 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-caja" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>Caja y balances</h3>
+                        <p>Sabe cuánto entregaste, cuánto cobraste y cuánto ganaste.</p>
+                        <span class="module-count">6 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-equipo" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3>Equipo y seguridad</h3>
+                        <p>Trabaja con cobradores, supervisores y secretarias sin perder el control.</p>
+                        <span class="module-count">6 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-portal" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Portal de clientes</h3>
+                        <p>Tus clientes consultan sus pagos y te piden préstamos desde un link.</p>
+                        <span class="module-count">4 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destacados -->
+        <section class="spotlight-section" id="destacados">
+            <div class="container spotlight-grid">
+                <article class="spotlight-card spotlight-dark">
+                    <span class="spotlight-tag"><i class="fa-solid fa-wifi"></i> Cobro sin conexión</span>
+                    <h3>Tu cobrador no se detiene por falta de señal</h3>
+                    <p>Antes de salir baja la ruta al teléfono. En la calle cobra, imprime recibos y registra gastos.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Lo registrado se sube solo al volver la señal</li>
+                        <li><i class="fa-solid fa-check"></i> Se sube en orden y reintenta si falla la red</li>
+                        <li><i class="fa-solid fa-check"></i> No se duplican abonos</li>
+                        <li><i class="fa-solid fa-check"></i> Ves lo pendiente por subir en todo momento</li>
+                    </ul>
+                </article>
+                <article class="spotlight-card">
+                    <span class="spotlight-tag"><i class="fa-solid fa-globe"></i> Portal de clientes</span>
+                    <h3>Tus clientes ven sus pagos sin llamarte</h3>
+                    <p>Cada recibo trae el link privado del cliente, y tu negocio tiene su propio link público.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Saldo, próxima cuota, cuotas y abonos</li>
+                        <li><i class="fa-solid fa-check"></i> Consulta con su documento desde tu link</li>
+                        <li><i class="fa-solid fa-check"></i> Formulario para solicitar préstamos</li>
+                        <li><i class="fa-solid fa-check"></i> Enciéndelo o apágalo cuando quieras</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Lista completa -->
+        <section class="full-list-section" id="todas-las-funciones">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lista completa de funciones</h2>
+                    <p>Todo lo que tiene CobraX, módulo por módulo.</p>
+                </div>
+                <div class="full-list-grid">
+                    <div class="full-list-group" id="lista-prestamos">
+                        <h3><i class="fa-solid fa-hand-holding-dollar"></i> Préstamos de dinero</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-scale-balanced"></i>
+                                <div><strong>4 sistemas de amortización</strong><span>Informal (interés sobre el total), francés, alemán y americano.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-calendar-days"></i>
+                                <div><strong>Frecuencias de cobro</strong><span>Diario, semanal, quincenal o mensual.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-layer-group"></i>
+                                <div><strong>Tipos de préstamo</strong><span>Plantillas como “Préstamo rápido 20% · 24 cuotas”: al prestar solo eliges.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-triangle-exclamation"></i>
+                                <div><strong>Mora configurable</strong><span>Porcentaje diario o valor fijo, con días de gracia; puedes condonarla.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-invoice-dollar"></i>
+                                <div><strong>Cargos y seguro</strong><span>Papelería o estudio descontados al prestar y seguro por cuota.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-user-shield"></i>
+                                <div><strong>Fiador y garantías</strong><span>Datos del fiador y bienes que respaldan el préstamo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-umbrella-beach"></i>
+                                <div><strong>Días sin cobro</strong><span>Sábados, domingos, festivos del país y días no laborales.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-skull-crossbones"></i>
+                                <div><strong>Préstamos perdidos</strong><span>Márcalos como pérdida y reactívalos si el cliente vuelve a pagar.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-ventas">
+                        <h3><i class="fa-solid fa-bag-shopping"></i> Ventas a crédito</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-box-open"></i>
+                                <div><strong>Catálogo de artículos</strong><span>Costo, precio de contado y precio a crédito con su % de recargo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-list-ol"></i>
+                                <div><strong>Todas las opciones de cuotas</strong><span>La app muestra semanal, quincenal y mensual listas para elegir.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-money-bill-1"></i>
+                                <div><strong>Cuota inicial</strong><span>Definida por artículo; si el cliente da más, quedan menos cuotas.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-cash-register"></i>
+                                <div><strong>También de contado</strong><span>El mismo artículo se puede vender de contado o a crédito.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-boxes-stacked"></i>
+                                <div><strong>Control de stock</strong><span>Entradas, ajustes y descuento automático al vender.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-barcode"></i>
+                                <div><strong>Serial o IMEI</strong><span>Registra el serial de cada artículo vendido.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-percent"></i>
+                                <div><strong>Comisiones</strong><span>Configura comisión por vender y por cobrar, en % o valor fijo.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-cobro">
+                        <h3><i class="fa-solid fa-motorcycle"></i> Cobro en ruta</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-route"></i>
+                                <div><strong>Rutas y recorrido</strong><span>Clientes por ruta, ordenados arrastrando según el recorrido.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-bell"></i>
+                                <div><strong>Cobros de hoy y atrasados</strong><span>Lista de quién paga hoy y quién está atrasado, con días y valor.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-wifi"></i>
+                                <div><strong>Cobro sin conexión</strong><span>Baja la ruta al teléfono, cobra sin señal y todo se sube solo después.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-credit-card"></i>
+                                <div><strong>Métodos de pago</strong><span>Efectivo, transferencia, oficina u otro.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-receipt"></i>
+                                <div><strong>Recibos personalizables</strong><span>Con tu logo y tu texto; compártelos o imprímelos.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-print"></i>
+                                <div><strong>Impresora Bluetooth</strong><span>Impresoras térmicas BLE, con ancho de papel configurable.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-signature"></i>
+                                <div><strong>Contratos con firma</strong><span>Plantillas de contrato y firma con el dedo en pantalla.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-camera"></i>
+                                <div><strong>Fotos</strong><span>Fotos del cliente y del préstamo o la venta.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-caja">
+                        <h3><i class="fa-solid fa-chart-pie"></i> Caja y balances</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-door-open"></i>
+                                <div><strong>Apertura y cierre de caja</strong><span>Base inicial, efectivo contado y cierres anteriores.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                <div><strong>Gastos e ingresos</strong><span>Movimientos de caja con su detalle.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-chart-line"></i>
+                                <div><strong>Ganancia neta por mes</strong><span>Cobrado, gastos y pérdidas comparados con el mes anterior.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-heart-pulse"></i>
+                                <div><strong>Cartera y atrasados</strong><span>Cartera de hoy, mora cobrada y clientes atrasados.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-tags"></i>
+                                <div><strong>Margen de las ventas</strong><span>La ganancia de los artículos vendidos, separada de los intereses.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-pdf"></i>
+                                <div><strong>Reportes PDF</strong><span>Lista para cobrar hoy con las columnas que quieras.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-equipo">
+                        <h3><i class="fa-solid fa-users-gear"></i> Equipo y seguridad</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-user-plus"></i>
+                                <div><strong>Subcuentas</strong><span>Un usuario para cada persona, con sus permisos y sus rutas.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-lock"></i>
+                                <div><strong>Condiciones bloqueadas</strong><span>Las subcuentas no pueden cambiar lo que marques en un tipo de préstamo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-clock-rotate-left"></i>
+                                <div><strong>Registro de actividad</strong><span>Ediciones, eliminaciones y anulaciones: qué, quién y cuándo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-mobile-screen"></i>
+                                <div><strong>Sesiones y dispositivos</strong><span>Mira dónde está abierta la cuenta y ciérrala a distancia.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-earth-americas"></i>
+                                <div><strong>País y moneda</strong><span>Formato de moneda del país del negocio.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-moon"></i>
+                                <div><strong>Modo claro y oscuro</strong><span>Elige la apariencia o usa la del teléfono.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-portal">
+                        <h3><i class="fa-solid fa-globe"></i> Portal de clientes</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-link"></i>
+                                <div><strong>Link privado por cliente</strong><span>Ve su saldo, próxima cuota, cuotas y abonos; sale en cada recibo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-id-card"></i>
+                                <div><strong>Consulta con documento</strong><span>Desde el link del negocio, el cliente consulta con su cédula.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-inbox"></i>
+                                <div><strong>Solicitudes de préstamo</strong><span>Formulario en tu link; las solicitudes llegan a la app.</span></div>
+                            </li>
+                            <li><i class="fa-brands fa-whatsapp"></i>
+                                <div><strong>Enviar por WhatsApp</strong><span>Comparte el link privado del cliente en un toque.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planes -->
+        <section class="pricing-section" id="planes">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Planes por suscripción</h2>
+                    <p>Pagas una suscripción mensual según tus clientes, tus subcuentas y el espacio para fotos.
+                        Empieza con 15 días gratis, sin tarjeta.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="plan-card">
+                        
+                        <span class="plan-tag">Para probar</span>
+                        <h3>Gratis</h3>
+                        <div class="price">$0 <span>15 días</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-users"></i> Hasta <strong>15 clientes</strong></li>
+                            <li><i class="fa-solid fa-user-plus"></i> <strong>1</strong> subcuenta</li>
+                            <li><i class="fa-solid fa-images"></i> 50 MB para fotos</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card">
+                        
+                        <span class="plan-tag">Para empezar</span>
+                        <h3>Básico</h3>
+                        <div class="price">$5 <span>USD / mes</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-users"></i> Hasta <strong>100 clientes</strong></li>
+                            <li><i class="fa-solid fa-user-plus"></i> <strong>2</strong> subcuentas</li>
+                            <li><i class="fa-solid fa-images"></i> 100 MB para fotos</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card featured">
+                        <div class="popular-badge">Recomendado</div>
+                        <span class="plan-tag">Recomendado</span>
+                        <h3>Negocio</h3>
+                        <div class="price">$10 <span>USD / mes</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-users"></i> Hasta <strong>500 clientes</strong></li>
+                            <li><i class="fa-solid fa-user-plus"></i> <strong>5</strong> subcuentas</li>
+                            <li><i class="fa-solid fa-images"></i> 500 MB para fotos</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card">
+                        
+                        <span class="plan-tag">Para carteras grandes</span>
+                        <h3>Pro</h3>
+                        <div class="price">$20 <span>USD / mes</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-users"></i> Hasta <strong>1.000 clientes</strong></li>
+                            <li><i class="fa-solid fa-user-plus"></i> <strong>10</strong> subcuentas</li>
+                            <li><i class="fa-solid fa-images"></i> 1 GB para fotos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Todos los planes incluyen cobro sin conexión, recibos, contratos, ventas a crédito y reportes.
+                        Puedes cambiar de plan cuando tu cartera crezca.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pasos -->
+        <section class="steps-section" id="como-funciona">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Empieza en 4 pasos</h2>
+                    <p>Del registro a tu primer cobro en minutos.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card"><span class="step-number">1</span>
+                        <h3>Crea tu cuenta</h3>
+                        <p>Nombre de tu negocio y país. 15 días gratis, sin tarjeta.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">2</span>
+                        <h3>Configura tu negocio</h3>
+                        <p>Logo, rutas, tipos de préstamo, artículos, recibos y contratos.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">3</span>
+                        <h3>Presta o vende</h3>
+                        <p>Crea el cliente y su préstamo o venta a crédito en el mismo paso.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">4</span>
+                        <h3>Sal a cobrar</h3>
+                        <p>Con o sin señal: registra abonos, imprime recibos y cierra la caja.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>CobraX llega muy pronto</h2>
+                    <p>Escríbenos y te avisamos el día del lanzamiento en Android y iOS.</p>
+                    <div class="cta-buttons">
+                        <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20CobraX%20est%C3%A9%20disponible" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i>
+                            Avísame por WhatsApp</a>
+                        <a href="../" class="btn btn-outline"><i class="fa-solid fa-grip"></i> Ver otros sistemas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-image-container">
+            <img alt="CobraX vista ampliada" id="lightbox-img">
+            <span class="lightbox-counter" id="lightbox-counter">1 / 15</span>
+        </div>
+        <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="brand"><span class="brand-badge"><i class="fa-solid fa-bolt"></i></span> CobraX</div>
+                <p>Diseñado para cobrar préstamos y ventas a crédito. Muy pronto en Android y iOS.</p>
+                <div class="social-links">
+                    <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20deseo%20informaci%C3%B3n%20de%20CobraX" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:groonscolombia@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul class="footer-list">
+                    <li><i class="fa-brands fa-whatsapp"></i> +57 350 470 6990</li>
+                    <li><i class="fa-solid fa-envelope"></i> groonscolombia@gmail.com</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Colombia</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Accesos rápidos</h4>
+                <ul class="footer-list">
+                    <li><a href="#dos-en-uno">Préstamos y ventas a crédito</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#todas-las-funciones">Lista completa de funciones</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Otros sistemas</h4>
+                <ul class="footer-list">
+                    <li><a href="../prestabit/">PrestaBIT · Préstamos</a></li>
+                    <li><a href="../puntoventa/">PuntoVenta · Ventas e inventario</a></li>
+                    <li><a href="../planco/">Planco · Negocios de servicios</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 CobraX. Desarrollado por <a href="../">GroonS</a>. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.PV_TOTAL_FOTOS = 15;</script>
+    <script src="assets/js/cobrax.js?v=1"></script>
+</body>
+
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuntoVenta | Ventas, inventario y caja para tu negocio</title>
+    <meta name="description"
+        content="PuntoVenta de GroonS: vende con escáner, cobra en efectivo, tarjeta, transferencia o crédito, controla inventario con vencimientos, cierres de caja, sucursales y catálogo web con pedidos por WhatsApp.">
+    <meta name="theme-color" content="#E8590C">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/puntoventa.css?v=2">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <header class="header" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand">
+                <span class="brand-badge"><i class="fa-solid fa-bag-shopping"></i></span>
+                <span class="brand-name">Punto<span>Venta</span></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#caracteristicas" class="nav-link">Características</a>
+                <a href="#destacados" class="nav-link">Portal y Caja</a>
+                <a href="#galeria" class="nav-link">Capturas</a>
+                <a href="#planes" class="nav-link">Planes</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="../" class="nav-link"><i class="fa-solid fa-arrow-left"></i> GroonS</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20PuntoVenta%20est%C3%A9%20disponible"
+                    target="_blank" class="btn btn-primary btn-sm">
+                    <i class="fa-regular fa-bell"></i> Avísame
+                </a>
+                <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="chip"><i class="fa-solid fa-rocket"></i> Muy pronto en Android y iOS</div>
+                    <h1>Vende, cobra y controla tu <span>inventario</span> desde el celular.</h1>
+                    <p>
+                        PuntoVenta es el sistema de caja para tiendas, minimercados, droguerías, papelerías y negocios
+                        de mostrador. Escanea, cobra, imprime la factura y cuadra la caja en segundos.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <span class="btn btn-store is-soon">
+                            <i class="fa-brands fa-google-play"></i>
+                            <span class="btn-text"><small>Próximamente en</small><strong>Google Play</strong></span>
+                        </span>
+                        <span class="btn btn-store is-soon">
+                            <i class="fa-brands fa-apple"></i>
+                            <span class="btn-text"><small>Próximamente en</small><strong>App Store</strong></span>
+                        </span>
+                        <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20PuntoVenta%20est%C3%A9%20disponible"
+                            target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Avísame del
+                            lanzamiento</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h4>15 días</h4>
+                            <p>Prueba gratis</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Desde $4.99</h4>
+                            <p>USD al mes</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Multi-sucursal</h4>
+                            <p>Cajas y usuarios</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="device-mockup">
+                        <div class="mockup-screen">
+                            <img src="assets/img/1.jpeg" alt="PuntoVenta: inicio">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section class="gallery-section" id="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Así se ve PuntoVenta</h2>
+                    <p>La galería se mueve sola. Pasa el cursor para pausarla y haz clic para ampliar.</p>
+                </div>
+            </div>
+            <div class="gallery-wrapper" id="gallery-wrapper">
+                <div class="gallery-track" id="gallery-track">
+                    <div class="gallery-card" data-index="1">
+                        <div class="card-inner"><img src="assets/img/1.jpeg" alt="PuntoVenta: Inicio" loading="lazy"></div>
+                        <span>01 / Inicio</span>
+                    </div>
+                    <div class="gallery-card" data-index="2">
+                        <div class="card-inner"><img src="assets/img/2.jpeg" alt="PuntoVenta: Vender" loading="lazy"></div>
+                        <span>02 / Vender</span>
+                    </div>
+                    <div class="gallery-card" data-index="3">
+                        <div class="card-inner"><img src="assets/img/3.jpeg" alt="PuntoVenta: Buscar productos" loading="lazy"></div>
+                        <span>03 / Buscar productos</span>
+                    </div>
+                    <div class="gallery-card" data-index="4">
+                        <div class="card-inner"><img src="assets/img/4.jpeg" alt="PuntoVenta: Carrito" loading="lazy"></div>
+                        <span>04 / Carrito</span>
+                    </div>
+                    <div class="gallery-card" data-index="5">
+                        <div class="card-inner"><img src="assets/img/5.jpeg" alt="PuntoVenta: Cobrar" loading="lazy"></div>
+                        <span>05 / Cobrar</span>
+                    </div>
+                    <div class="gallery-card" data-index="6">
+                        <div class="card-inner"><img src="assets/img/6.jpeg" alt="PuntoVenta: Productos" loading="lazy"></div>
+                        <span>06 / Productos</span>
+                    </div>
+                    <div class="gallery-card" data-index="7">
+                        <div class="card-inner"><img src="assets/img/7.jpeg" alt="PuntoVenta: Opciones del producto" loading="lazy"></div>
+                        <span>07 / Opciones del producto</span>
+                    </div>
+                    <div class="gallery-card" data-index="8">
+                        <div class="card-inner"><img src="assets/img/8.jpeg" alt="PuntoVenta: Trazabilidad" loading="lazy"></div>
+                        <span>08 / Trazabilidad</span>
+                    </div>
+                    <div class="gallery-card" data-index="9">
+                        <div class="card-inner"><img src="assets/img/9.jpeg" alt="PuntoVenta: Ventas" loading="lazy"></div>
+                        <span>09 / Ventas</span>
+                    </div>
+                    <div class="gallery-card" data-index="10">
+                        <div class="card-inner"><img src="assets/img/10.jpeg" alt="PuntoVenta: Más vendidos" loading="lazy"></div>
+                        <span>10 / Más vendidos</span>
+                    </div>
+                    <div class="gallery-card" data-index="11">
+                        <div class="card-inner"><img src="assets/img/11.jpeg" alt="PuntoVenta: Créditos" loading="lazy"></div>
+                        <span>11 / Créditos</span>
+                    </div>
+                    <div class="gallery-card" data-index="12">
+                        <div class="card-inner"><img src="assets/img/12.jpeg" alt="PuntoVenta: Portal web" loading="lazy"></div>
+                        <span>12 / Portal web</span>
+                    </div>
+                    <div class="gallery-card" data-index="13">
+                        <div class="card-inner"><img src="assets/img/13.jpeg" alt="PuntoVenta: Ajustes" loading="lazy"></div>
+                        <span>13 / Ajustes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulos -->
+        <section class="features" id="caracteristicas">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Todo lo que incluye PuntoVenta</h2>
+                    <p>38 funciones organizadas en 6 módulos para manejar tu negocio de mostrador.</p>
+                </div>
+                <div class="modules-grid">
+                    <a href="#lista-vender" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-cash-register"></i></div>
+                        <h3>Vender y cobrar</h3>
+                        <p>Ventas rápidas con escáner, varios métodos de pago y factura al instante.</p>
+                        <span class="module-count">8 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-productos" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-box-open"></i></div>
+                        <h3>Productos e inventario</h3>
+                        <p>Catálogo con fotos, existencias por sucursal, vencimientos y trazabilidad.</p>
+                        <span class="module-count">8 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-caja" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-vault"></i></div>
+                        <h3>Caja y ventas</h3>
+                        <p>Apertura, cierre y reportes de cada caja para que el dinero siempre cuadre.</p>
+                        <span class="module-count">7 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-creditos" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3>Créditos (fiado)</h3>
+                        <p>Vende a crédito y lleva el control de lo que te deben tus clientes.</p>
+                        <span class="module-count">4 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-negocio" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-store"></i></div>
+                        <h3>Negocio y equipo</h3>
+                        <p>Sucursales, usuarios con permisos y horarios, y proveedores.</p>
+                        <span class="module-count">6 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-portal" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Portal web y pedidos</h3>
+                        <p>Tu catálogo en internet para que tus clientes te pidan por WhatsApp.</p>
+                        <span class="module-count">5 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destacados -->
+        <section class="spotlight-section" id="destacados">
+            <div class="container spotlight-grid">
+                <article class="spotlight-card">
+                    <span class="spotlight-tag"><i class="fa-solid fa-vault"></i> Caja que siempre cuadra</span>
+                    <h3>Abre, vende y cierra la caja sin descuadres</h3>
+                    <p>Cada caja lleva su efectivo, sus ventas y su cierre, con el nombre de quien la usó.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Base inicial al abrir la caja</li>
+                        <li><i class="fa-solid fa-check"></i> Efectivo esperado contra efectivo contado</li>
+                        <li><i class="fa-solid fa-check"></i> Ventas por efectivo, tarjeta, transferencia y crédito</li>
+                        <li><i class="fa-solid fa-check"></i> Cierre impreso o compartido por WhatsApp</li>
+                        <li><i class="fa-solid fa-check"></i> Abre la misma caja en el computador con un código</li>
+                    </ul>
+                    <div class="spotlight-price">Incluido en todos los planes</div>
+                </article>
+
+                <article class="spotlight-card spotlight-dark">
+                    <span class="spotlight-tag"><i class="fa-solid fa-globe"></i> Portal web</span>
+                    <h3>Tu catálogo en internet, con pedidos por WhatsApp</h3>
+                    <p>Comparte el enlace en tus redes y tus clientes ven tus productos con foto y precio.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Catálogo con las existencias de tu sucursal</li>
+                        <li><i class="fa-solid fa-check"></i> El cliente arma su pedido y te lo envía por WhatsApp</li>
+                        <li><i class="fa-solid fa-check"></i> Colores, letra y descripción de tu marca</li>
+                        <li><i class="fa-solid fa-check"></i> Enciéndelo o apágalo cuando quieras</li>
+                    </ul>
+                    <div class="spotlight-price">Disponible desde la app, en Ajustes › Portal web</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Lista completa -->
+        <section class="full-list-section" id="todas-las-funciones">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lista completa de funciones</h2>
+                    <p>Todo lo que tiene PuntoVenta, módulo por módulo.</p>
+                </div>
+                <div class="full-list-grid">
+                    <div class="full-list-group" id="lista-vender">
+                        <h3><i class="fa-solid fa-cash-register"></i> Vender y cobrar</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-barcode"></i>
+                                <div><strong>Escáner de códigos</strong><span>Con la cámara del celular o con lector USB o Bluetooth.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-magnifying-glass"></i>
+                                <div><strong>Búsqueda rápida</strong><span>Encuentra productos por nombre o código, con foto y existencias.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-credit-card"></i>
+                                <div><strong>4 métodos de pago</strong><span>Efectivo, tarjeta, transferencia o crédito.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-coins"></i>
+                                <div><strong>Cálculo del cambio</strong><span>Botones de billetes rápidos y cambio automático.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-receipt"></i>
+                                <div><strong>Factura al instante</strong><span>Compártela por WhatsApp o imprímela.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-print"></i>
+                                <div><strong>Impresora térmica Bluetooth</strong><span>Compatible con impresoras de 58 y 80 mm.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-rotate-left"></i>
+                                <div><strong>Devoluciones y anulaciones</strong><span>Devuelve productos, cambia por otro o anula la factura.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-laptop"></i>
+                                <div><strong>Vender en el computador</strong><span>Abre la caja en un PC con un código seguro desde el celular.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-productos">
+                        <h3><i class="fa-solid fa-box-open"></i> Productos e inventario</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-camera"></i>
+                                <div><strong>Fotos de productos</strong><span>Cada producto con su foto para reconocerlo rápido.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <div><strong>Leer el nombre con la cámara</strong><span>Toma una foto del empaque y se llena el nombre solo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-calendar-xmark"></i>
+                                <div><strong>Fechas de vencimiento</strong><span>Lotes con fecha y aviso antes de que venzan.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-clipboard-check"></i>
+                                <div><strong>Conteo de inventario</strong><span>Cuenta lo que hay en el estante y ajusta faltantes o sobrantes.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-route"></i>
+                                <div><strong>Trazabilidad</strong><span>Dónde y cuándo se vendió, entró o se movió cada producto.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-right-left"></i>
+                                <div><strong>Traslados entre sucursales</strong><span>Mueve unidades, primero las que vencen antes.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-triangle-exclamation"></i>
+                                <div><strong>Agotados y por vencer</strong><span>Filtros para ver qué reponer o vender primero.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-excel"></i>
+                                <div><strong>Importar desde Excel</strong><span>Trae tus productos de otro sistema con una plantilla.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-caja">
+                        <h3><i class="fa-solid fa-vault"></i> Caja y ventas</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-door-open"></i>
+                                <div><strong>Apertura de caja</strong><span>Con base inicial de efectivo en el cajón.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-lock"></i>
+                                <div><strong>Cierre de caja</strong><span>Cuenta billetes y monedas y compara con lo esperado.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-layer-group"></i>
+                                <div><strong>Varias cajas</strong><span>Cada caja lleva su propio efectivo y su cierre.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-chart-line"></i>
+                                <div><strong>Reporte de ventas</strong><span>Por día, semana, mes o fechas, por caja y método de pago.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-trophy"></i>
+                                <div><strong>Más vendidos y ganancia</strong><span>Productos estrella con la ganancia de cada uno.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-invoice"></i>
+                                <div><strong>Buscar facturas</strong><span>Para ver, reimprimir, devolver o anular.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-share-nodes"></i>
+                                <div><strong>Compartir e imprimir</strong><span>Resumen de ventas y cierres por WhatsApp o impresora.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-creditos">
+                        <h3><i class="fa-solid fa-hand-holding-dollar"></i> Créditos (fiado)</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-user-clock"></i>
+                                <div><strong>Ventas a crédito</strong><span>Registra quién queda debiendo y cuánto.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-money-bill-wave"></i>
+                                <div><strong>Abonos</strong><span>Recibe pagos parciales hasta saldar la factura.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-lines"></i>
+                                <div><strong>Estado de cuenta</strong><span>Compártelo o imprímelo para tu cliente.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-filter"></i>
+                                <div><strong>Pendientes y pagados</strong><span>Busca por cliente, teléfono o factura.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-negocio">
+                        <h3><i class="fa-solid fa-store"></i> Negocio y equipo</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-shop"></i>
+                                <div><strong>Varias sucursales</strong><span>Nombre, NIT, teléfono, dirección y logo en tus facturas.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-users-gear"></i>
+                                <div><strong>Usuarios y permisos</strong><span>Cuentas para cajeros y bodegueros con permisos uno a uno.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-clock"></i>
+                                <div><strong>Horario de trabajo</strong><span>Fuera del horario la sesión se cierra sola.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-user-slash"></i>
+                                <div><strong>Suspender usuarios</strong><span>Bloquea el acceso al instante sin perder su historial.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-truck"></i>
+                                <div><strong>Proveedores</strong><span>Quién te surte y qué días visita; aparece en el inicio.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-gauge"></i>
+                                <div><strong>Resumen del día</strong><span>Ventas, saldo en caja, pedidos, vencimientos y por cobrar.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-portal">
+                        <h3><i class="fa-solid fa-globe"></i> Portal web y pedidos</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-globe"></i>
+                                <div><strong>Catálogo en internet</strong><span>Una página con tus productos, fotos y precios.</span></div>
+                            </li>
+                            <li><i class="fa-brands fa-whatsapp"></i>
+                                <div><strong>Pedidos por WhatsApp</strong><span>El cliente arma el pedido y te llega con cantidades y total.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-palette"></i>
+                                <div><strong>Personalizable</strong><span>Colores, estilo de letra, descripción y enlace propio.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-eye-slash"></i>
+                                <div><strong>Control de agotados</strong><span>Muéstralos marcados como agotados u ocúltalos.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-moon"></i>
+                                <div><strong>Modo claro y oscuro</strong><span>La app se adapta a tu preferencia.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planes -->
+        <section class="pricing-section" id="planes">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Planes</h2>
+                    <p>Empieza con 15 días gratis. Después eliges el plan según tus productos y cajas.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <span class="plan-tag">Para empezar a vender</span>
+                            <h3>Bronce</h3>
+                            <div class="price">$4.99 <span>USD / mes</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-box"></i> Hasta <strong>300 productos</strong></li>
+                            <li><i class="fa-solid fa-cash-register"></i> <strong>1 caja</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Todas las funciones de venta e inventario</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card featured">
+                        <div class="popular-badge">Más elegido</div>
+                        <div class="plan-header">
+                            <span class="plan-tag">Para negocios en crecimiento</span>
+                            <h3>Plata</h3>
+                            <div class="price">$9.99 <span>USD / mes</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-box"></i> Hasta <strong>1.000 productos</strong></li>
+                            <li><i class="fa-solid fa-cash-register"></i> <strong>2 cajas</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Todas las funciones de venta e inventario</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <span class="plan-tag">El más completo</span>
+                            <h3>Oro</h3>
+                            <div class="price">$19.99 <span>USD / mes</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-box"></i> Hasta <strong>3.000 productos</strong></li>
+                            <li><i class="fa-solid fa-cash-register"></i> <strong>5 cajas</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Todas las funciones de venta e inventario</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plan-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Suscripción mensual desde App Store o Google Play; puedes cancelarla cuando quieras desde la
+                        tienda. Si tu plan vence sigues vendiendo, pero no puedes crear productos ni cajas nuevas. Al
+                        bajar de plan no se borra nada. Cada sucursal nueva trae su propia caja.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pasos -->
+        <section class="steps-section" id="como-funciona">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Empieza en 4 pasos</h2>
+                    <p>Del registro a tu primera venta en pocos minutos.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card"><span class="step-number">1</span>
+                        <h3>Crea tu cuenta</h3>
+                        <p>Descarga la app y regístrate. Tienes 15 días de prueba gratis.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">2</span>
+                        <h3>Registra tu negocio</h3>
+                        <p>Nombre, NIT, logo, sucursales y cajas.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">3</span>
+                        <h3>Carga tus productos</h3>
+                        <p>Uno por uno con la cámara o todos de una vez desde Excel.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">4</span>
+                        <h3>Abre la caja y vende</h3>
+                        <p>Escanea, cobra, imprime y cierra la caja al final del día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section" id="descargar">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>PuntoVenta llega muy pronto</h2>
+                    <p>Escríbenos y te avisamos el día del lanzamiento en Android y iOS.</p>
+                    <div class="cta-buttons">
+                        <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20PuntoVenta%20est%C3%A9%20disponible"
+                            target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Avísame por
+                            WhatsApp</a>
+                        <a href="../" class="btn btn-outline"><i class="fa-solid fa-grip"></i> Ver otros sistemas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Anterior"><i
+                class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-image-container">
+            <img alt="PuntoVenta vista ampliada" id="lightbox-img">
+            <span class="lightbox-counter" id="lightbox-counter">1 / 13</span>
+        </div>
+        <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Siguiente"><i
+                class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="brand">
+                    <span class="brand-badge"><i class="fa-solid fa-bag-shopping"></i></span>
+                    <span class="brand-name">Punto<span>Venta</span></span>
+                </div>
+                <p>Sistema de ventas, inventario y caja para negocios de mostrador. Muy pronto en Android y iOS.</p>
+                <div class="social-links">
+                    <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20deseo%20informaci%C3%B3n%20de%20PuntoVenta" target="_blank"
+                        aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:groonscolombia@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul class="footer-list">
+                    <li><i class="fa-brands fa-whatsapp"></i> +57 350 470 6990</li>
+                    <li><i class="fa-solid fa-envelope"></i> groonscolombia@gmail.com</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Colombia</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Accesos rápidos</h4>
+                <ul class="footer-list">
+                    <li><a href="../">Sistemas GroonS</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#todas-las-funciones">Lista completa de funciones</a></li>
+                    <li><a href="#galeria">Capturas</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Otros sistemas</h4>
+                <ul class="footer-list">
+                    <li><a href="../prestabit/">PrestaBIT · Préstamos</a></li>
+                    <li><a href="../#sistemas">Ver todos</a></li>
+                </ul>
+                <h4 class="footer-subtitle">Legal</h4>
+                <ul class="footer-list">
+                    <li><a href="../apps/puntoventa/politicas/politicas.html"><i class="fa-solid fa-file-shield"></i>
+                            Términos y privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 PuntoVenta. Desarrollado por <a href="../">GroonS</a>. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.PV_TOTAL_FOTOS = 13;</script>
+    <script src="assets/js/puntoventa.js?v=1"></script>
+</body>
+
+</html>

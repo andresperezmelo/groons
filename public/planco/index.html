@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planco | Clientes, cobros, agenda y asistencias</title>
+    <meta name="description"
+        content="Planco de GroonS: la app para gimnasios, barberías, peluquerías, canchas, academias, spas y consultorios. Mensualidades, paquetes de sesiones, agenda, reservas web, ingreso con QR y cobros por WhatsApp.">
+    <meta name="theme-color" content="#131217">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/planco.css?v=2">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#hero" class="brand">planco<span class="brand-dot"></span></a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#negocios" class="nav-link">Negocios</a>
+                <a href="#caracteristicas" class="nav-link">Características</a>
+                <a href="#galeria" class="nav-link">Capturas</a>
+                <a href="#planes" class="nav-link">Planes</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="../" class="nav-link"><i class="fa-solid fa-arrow-left"></i> GroonS</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20Planco%20est%C3%A9%20disponible" target="_blank" class="btn btn-volt btn-sm"><i class="fa-regular fa-bell"></i> Avísame</a>
+                <button class="menu-btn" id="menu-btn" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="chip"><i class="fa-solid fa-rocket"></i> Muy pronto en Android y iOS</div>
+                    <h1>Tu negocio, <span class="mark">al día.</span></h1>
+                    <p>Clientes, cobros, agenda y asistencias en un solo lugar. Hecho para <strong>gimnasios,
+                            barberías, peluquerías, canchas, academias, spas, consultorios</strong> y cualquier negocio
+                        que cobre por mes, por hora, por sesión o a precio fijo.</p>
+
+                    <div class="hero-buttons">
+                        <span class="btn btn-store is-soon"><i class="fa-brands fa-google-play"></i>
+                            <span class="btn-text"><small>Próximamente en</small><strong>Google Play</strong></span></span>
+                        <span class="btn btn-store is-soon"><i class="fa-brands fa-apple"></i>
+                            <span class="btn-text"><small>Próximamente en</small><strong>App Store</strong></span></span>
+                        <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20Planco%20est%C3%A9%20disponible" target="_blank" class="btn btn-volt"><i class="fa-brands fa-whatsapp"></i>
+                            Avísame del lanzamiento</a>
+                    </div>
+
+                    <div class="hero-pills">
+                        <span><i class="fa-solid fa-qrcode"></i> Ingreso con QR</span>
+                        <span><i class="fa-solid fa-money-bill-wave"></i> Cobros</span>
+                        <span><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+                        <span><i class="fa-solid fa-calendar-days"></i> Reservas web</span>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="device-mockup">
+                        <div class="mockup-screen"><img src="assets/img/1.jpeg" alt="Planco: inicio"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Varios negocios -->
+        <section class="negocios-section" id="negocios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Un sistema, muchos negocios</span>
+                    <h2>Planco se adapta a tu tipo de negocio</h2>
+                    <p>Eliges tu tipo de negocio al crear la cuenta y la app toma su propio color. Los cobros, la agenda
+                        y el control de ingreso funcionan igual de bien para todos.</p>
+                </div>
+                <div class="biz-grid">
+                    <article class="biz-card" style="--biz: #D4FF3A">
+                        <div class="biz-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                        <h3>Gimnasios</h3>
+                        <p>Mensualidades y quincenas, ingreso con QR en la entrada y aviso a quien se le vence el plan.</p>
+                    </article>
+                    <article class="biz-card" style="--biz: #F5B83D">
+                        <div class="biz-icon"><i class="fa-solid fa-scissors"></i></div>
+                        <h3>Barberías</h3>
+                        <p>Agenda de cortes, varios barberos atendiendo a la misma hora y reservas desde la web.</p>
+                    </article>
+                    <article class="biz-card" style="--biz: #FF9EC4">
+                        <div class="biz-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+                        <h3>Peluquerías</h3>
+                        <p>Servicios a precio fijo, citas con duración y venta de productos en el mismo lugar.</p>
+                    </article>
+                    <article class="biz-card" style="--biz: #4FD1FF">
+                        <div class="biz-icon"><i class="fa-solid fa-futbol"></i></div>
+                        <h3>Canchas y escenarios</h3>
+                        <p>Alquiler por hora: el precio se calcula según las horas reservadas, con abonos y saldo.</p>
+                    </article>
+                    <article class="biz-card" style="--biz: #B9A4FF">
+                        <div class="biz-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Academias y clases</h3>
+                        <p>Paquetes de clases que se descuentan en cada asistencia, con vigencia en días.</p>
+                    </article>
+                    <article class="biz-card" style="--biz: #9EE6C4">
+                        <div class="biz-icon"><i class="fa-solid fa-spa"></i></div>
+                        <h3>Spa y estética</h3>
+                        <p>Tratamientos agendados, paquetes de sesiones y promociones con fecha límite.</p>
+                    </article>
+                    <article class="biz-card" style="--biz: #7EE0E6">
+                        <div class="biz-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h3>Consultorios</h3>
+                        <p>Citas confirmadas o rechazadas con aviso por WhatsApp y recordatorios de pago.</p>
+                    </article>
+                    <article class="biz-card" style="--biz: #FF9D5C">
+                        <div class="biz-icon"><i class="fa-solid fa-shop"></i></div>
+                        <h3>Y cualquier servicio</h3>
+                        <p>Si cobras por mes, por hora, por sesión o a precio fijo, Planco se adapta a tu negocio.</p>
+                    </article>
+                </div>
+
+                <div class="cobros-box">
+                    <h3>4 formas de cobro para lo que vendes</h3>
+                    <div class="cobros-grid">
+                    <div class="cobro-card">
+                        <i class="fa-solid fa-tag"></i>
+                        <div><strong>Precio fijo</strong><span>Un corte de cabello, una valoración o un producto.</span></div>
+                    </div>
+                    <div class="cobro-card">
+                        <i class="fa-solid fa-clock"></i>
+                        <div><strong>Por hora</strong><span>Alquiler de cancha o salón: se cobra según las horas reservadas.</span></div>
+                    </div>
+                    <div class="cobro-card">
+                        <i class="fa-solid fa-rotate"></i>
+                        <div><strong>Periódico</strong><span>Mensualidad, quincena, semana o año, con fecha de corte fija.</span></div>
+                    </div>
+                    <div class="cobro-card">
+                        <i class="fa-solid fa-ticket"></i>
+                        <div><strong>Paquete de sesiones</strong><span>10 clases: cada asistencia descuenta una, con vigencia.</span></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section class="gallery-section" id="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Así se ve Planco</h2>
+                    <p>La galería se mueve sola. Pasa el cursor para pausarla y haz clic para ampliar.</p>
+                </div>
+            </div>
+            <div class="gallery-wrapper" id="gallery-wrapper">
+                <div class="gallery-track" id="gallery-track">
+                    <div class="gallery-card" data-index="1">
+                        <div class="card-inner"><img src="assets/img/1.jpeg" alt="Planco: Inicio" loading="lazy"></div>
+                        <span>01 / Inicio</span>
+                    </div>
+                    <div class="gallery-card" data-index="2">
+                        <div class="card-inner"><img src="assets/img/2.jpeg" alt="Planco: Para cobrar y por vencer" loading="lazy"></div>
+                        <span>02 / Para cobrar y por vencer</span>
+                    </div>
+                    <div class="gallery-card" data-index="3">
+                        <div class="card-inner"><img src="assets/img/3.jpeg" alt="Planco: Clientes" loading="lazy"></div>
+                        <span>03 / Clientes</span>
+                    </div>
+                    <div class="gallery-card" data-index="4">
+                        <div class="card-inner"><img src="assets/img/4.jpeg" alt="Planco: Detalle del cliente" loading="lazy"></div>
+                        <span>04 / Detalle del cliente</span>
+                    </div>
+                    <div class="gallery-card" data-index="5">
+                        <div class="card-inner"><img src="assets/img/5.jpeg" alt="Planco: QR del cliente" loading="lazy"></div>
+                        <span>05 / QR del cliente</span>
+                    </div>
+                    <div class="gallery-card" data-index="6">
+                        <div class="card-inner"><img src="assets/img/6.jpeg" alt="Planco: QR en el celular del cliente" loading="lazy"></div>
+                        <span>06 / QR en el celular del cliente</span>
+                    </div>
+                    <div class="gallery-card" data-index="7">
+                        <div class="card-inner"><img src="assets/img/7.jpeg" alt="Planco: Agenda" loading="lazy"></div>
+                        <span>07 / Agenda</span>
+                    </div>
+                    <div class="gallery-card" data-index="8">
+                        <div class="card-inner"><img src="assets/img/8.jpeg" alt="Planco: Reservas desde la web" loading="lazy"></div>
+                        <span>08 / Reservas desde la web</span>
+                    </div>
+                    <div class="gallery-card" data-index="9">
+                        <div class="card-inner"><img src="assets/img/9.jpeg" alt="Planco: Catálogo" loading="lazy"></div>
+                        <span>09 / Catálogo</span>
+                    </div>
+                    <div class="gallery-card" data-index="10">
+                        <div class="card-inner"><img src="assets/img/10.jpeg" alt="Planco: 4 formas de cobro" loading="lazy"></div>
+                        <span>10 / 4 formas de cobro</span>
+                    </div>
+                    <div class="gallery-card" data-index="11">
+                        <div class="card-inner"><img src="assets/img/11.jpeg" alt="Planco: Pagos y utilidad" loading="lazy"></div>
+                        <span>11 / Pagos y utilidad</span>
+                    </div>
+                    <div class="gallery-card" data-index="12">
+                        <div class="card-inner"><img src="assets/img/12.jpeg" alt="Planco: Mensajes de WhatsApp" loading="lazy"></div>
+                        <span>12 / Mensajes de WhatsApp</span>
+                    </div>
+                    <div class="gallery-card" data-index="13">
+                        <div class="card-inner"><img src="assets/img/13.jpeg" alt="Planco: Página pública" loading="lazy"></div>
+                        <span>13 / Página pública</span>
+                    </div>
+                    <div class="gallery-card" data-index="14">
+                        <div class="card-inner"><img src="assets/img/14.jpeg" alt="Planco: Tipos de negocio" loading="lazy"></div>
+                        <span>14 / Tipos de negocio</span>
+                    </div>
+                    <div class="gallery-card" data-index="15">
+                        <div class="card-inner"><img src="assets/img/15.jpeg" alt="Planco: Más" loading="lazy"></div>
+                        <span>15 / Más</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulos -->
+        <section class="features" id="caracteristicas">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Todo lo que incluye Planco</h2>
+                    <p>35 funciones organizadas en 6 módulos.</p>
+                </div>
+                <div class="modules-grid">
+                    <a href="#lista-clientes" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+                        <h3>Clientes y cobros</h3>
+                        <p>Sabe al instante quién está al día, a quién se le vence y quién te debe.</p>
+                        <span class="module-count">7 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-catalogo" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Catálogo</h3>
+                        <p>Productos, servicios y planes, cada uno con su forma de cobro.</p>
+                        <span class="module-count">4 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-agenda" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-calendar-days"></i></div>
+                        <h3>Agenda y reservas</h3>
+                        <p>Organiza tus citas y deja que tus clientes reserven solos desde la web.</p>
+                        <span class="module-count">7 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-asistencias" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-qrcode"></i></div>
+                        <h3>Asistencias con QR</h3>
+                        <p>Control de ingreso en la entrada, sin tarjetas ni planillas.</p>
+                        <span class="module-count">6 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-dinero" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-sack-dollar"></i></div>
+                        <h3>Dinero</h3>
+                        <p>Ingresos, gastos y utilidad de tu negocio, siempre claros.</p>
+                        <span class="module-count">4 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-negocio" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-store"></i></div>
+                        <h3>Negocio y WhatsApp</h3>
+                        <p>Tu página pública, tu horario y tus mensajes, con la identidad de tu negocio.</p>
+                        <span class="module-count">7 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destacados -->
+        <section class="spotlight-section" id="destacados">
+            <div class="container spotlight-grid">
+                <article class="spotlight-card spotlight-dark">
+                    <span class="spotlight-tag"><i class="fa-solid fa-qrcode"></i> Ingreso con QR</span>
+                    <h3>Tu entrada controlada, sin planillas</h3>
+                    <p>Cada cliente recibe su QR por WhatsApp y lo muestra desde su celular al llegar.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Escanea con la cámara o busca por documento</li>
+                        <li><i class="fa-solid fa-check"></i> Si el plan venció, el acceso se rechaza solo</li>
+                        <li><i class="fa-solid fa-check"></i> Los paquetes descuentan una sesión por día</li>
+                        <li><i class="fa-solid fa-check"></i> Modo asistencia: un celular fijo en la entrada, con PIN</li>
+                    </ul>
+                </article>
+                <article class="spotlight-card">
+                    <span class="spotlight-tag"><i class="fa-solid fa-globe"></i> Página pública y reservas</span>
+                    <h3>Tus clientes reservan solos, a cualquier hora</h3>
+                    <p>Tu negocio tiene su propia página con catálogo, precios, promociones y horario.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Eligen servicio, fecha y una hora libre</li>
+                        <li><i class="fa-solid fa-check"></i> Tú confirmas o rechazas y les avisas por WhatsApp</li>
+                        <li><i class="fa-solid fa-check"></i> Muestra si estás abierto o cerrado ahora mismo</li>
+                        <li><i class="fa-solid fa-check"></i> Varias citas a la misma hora si tienes más personal</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Lista completa -->
+        <section class="full-list-section" id="todas-las-funciones">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lista completa de funciones</h2>
+                    <p>Todo lo que tiene Planco, módulo por módulo.</p>
+                </div>
+                <div class="full-list-grid">
+                    <div class="full-list-group" id="lista-clientes">
+                        <h3><i class="fa-solid fa-users"></i> Clientes y cobros</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-traffic-light"></i>
+                                <div><strong>Estado de cada cliente</strong><span>Al día, por vencer o debe, calculado solo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-calculator"></i>
+                                <div><strong>Deuda automática</strong><span>Cuenta los periodos vencidos y el valor que debe.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-id-card"></i>
+                                <div><strong>Asignar planes</strong><span>Mensualidad, paquete o servicio a cada cliente, con o sin pago.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-money-bill-wave"></i>
+                                <div><strong>Registrar pagos</strong><span>Efectivo, transferencia o tarjeta; varios periodos de una vez.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-calendar-check"></i>
+                                <div><strong>Fechas de corte fijas</strong><span>Mensual el 31 o quincenal el 15 y el 30, sin correrse.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-pen-to-square"></i>
+                                <div><strong>Ajustar vencimientos</strong><span>Cambia la fecha o cancela un plan conservando el historial.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-magnifying-glass"></i>
+                                <div><strong>Búsqueda y filtros</strong><span>Por nombre, documento o teléfono, y por estado.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-catalogo">
+                        <h3><i class="fa-solid fa-layer-group"></i> Catálogo</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-shapes"></i>
+                                <div><strong>4 formas de cobro</strong><span>Precio fijo, por hora, periódico o paquete de sesiones.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-percent"></i>
+                                <div><strong>Promociones</strong><span>Descuento en % con fecha límite, destacado en tu página.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-hourglass-half"></i>
+                                <div><strong>Duración y vigencia</strong><span>Duración para agendar y días de vigencia de los paquetes.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-box"></i>
+                                <div><strong>Venta de productos</strong><span>Agua, suplementos o productos de belleza en la misma app.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-agenda">
+                        <h3><i class="fa-solid fa-calendar-days"></i> Agenda y reservas</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-calendar-day"></i>
+                                <div><strong>Agenda diaria</strong><span>Citas con cliente o contacto, hora de inicio y fin.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-list-check"></i>
+                                <div><strong>Estados de la cita</strong><span>Pendiente, confirmada, completada, cancelada o no asistió.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-globe"></i>
+                                <div><strong>Reservas desde la web</strong><span>El cliente elige servicio, fecha y hora libre en tu página.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-people-group"></i>
+                                <div><strong>Citas simultáneas</strong><span>Ej.: 3 barberos = 3 citas a la misma hora.</span></div>
+                            </li>
+                            <li><i class="fa-brands fa-whatsapp"></i>
+                                <div><strong>Confirmar o rechazar</strong><span>Avisa al cliente por WhatsApp con un toque.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-ban"></i>
+                                <div><strong>El cliente gestiona su cita</strong><span>Consulta o cancela su reserva desde un enlace.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-cash-register"></i>
+                                <div><strong>Cobro de citas</strong><span>Abonos y saldo; por hora se calcula según lo reservado.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-asistencias">
+                        <h3><i class="fa-solid fa-qrcode"></i> Asistencias con QR</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-qrcode"></i>
+                                <div><strong>QR para cada cliente</strong><span>Envíale el enlace por WhatsApp o comparte la imagen.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-camera"></i>
+                                <div><strong>Validar con la cámara</strong><span>Escanea el QR o busca por documento o nombre.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-circle-xmark"></i>
+                                <div><strong>Rechazo automático</strong><span>Si el plan venció o no quedan sesiones, no entra.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-minus"></i>
+                                <div><strong>Descuento de sesiones</strong><span>Cada día de asistencia descuenta una del paquete.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-tablet-screen-button"></i>
+                                <div><strong>Modo asistencia</strong><span>Deja un celular en la entrada como escáner, con PIN.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-rotate-left"></i>
+                                <div><strong>Corregir errores</strong><span>Borra una asistencia y la sesión se devuelve.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-dinero">
+                        <h3><i class="fa-solid fa-sack-dollar"></i> Dinero</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-chart-line"></i>
+                                <div><strong>Ingresos del mes y del día</strong><span>En el inicio, con el total por método de pago.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-receipt"></i>
+                                <div><strong>Gastos por categoría</strong><span>Arriendo, nómina, insumos, servicios, publicidad y más.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-scale-balanced"></i>
+                                <div><strong>Utilidad</strong><span>Ingresos menos gastos en el rango de fechas que elijas.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-right-left"></i>
+                                <div><strong>Devoluciones y cambios</strong><span>Devuelve una venta o cámbiala por otro producto.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-negocio">
+                        <h3><i class="fa-solid fa-store"></i> Negocio y WhatsApp</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-link"></i>
+                                <div><strong>Página pública</strong><span>Catálogo, horario, promociones y botón de WhatsApp.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-door-open"></i>
+                                <div><strong>Horario con varias franjas</strong><span>Ej.: 8:00–12:00 y 14:00–19:00; muestra si estás abierto.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-comment-dots"></i>
+                                <div><strong>Plantillas de WhatsApp</strong><span>Cobro, vencimiento y QR con variables como {cliente} y {deuda}.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-bell"></i>
+                                <div><strong>Recordatorios en un toque</strong><span>A quien debe y a quien se le vence el plan.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-palette"></i>
+                                <div><strong>Color según tu negocio</strong><span>La app toma el color de tu tipo de negocio.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-earth-americas"></i>
+                                <div><strong>País, moneda e idioma</strong><span>Español, inglés, francés y portugués.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-moon"></i>
+                                <div><strong>Modo claro y oscuro</strong><span>Se adapta a la configuración de tu teléfono.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planes -->
+        <section class="pricing-section" id="planes">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Planes</h2>
+                    <p>Empieza gratis 15 días. Después pagas según la cantidad de clientes activos.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="plan-card">
+                        
+                        <span class="plan-tag">Para conocer Planco</span>
+                        <h3>Prueba</h3>
+                        <div class="price">Gratis <span>15 días</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-users"></i> Hasta <strong>100 clientes activos</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Todas las funciones</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card">
+                        
+                        <span class="plan-tag">Para empezar</span>
+                        <h3>Bronce</h3>
+                        <div class="price">$4.99 <span>USD / mes</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-users"></i> Hasta <strong>100 clientes activos</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Todas las funciones</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card featured">
+                        <div class="popular-badge">Más elegido</div>
+                        <span class="plan-tag">Para negocios en crecimiento</span>
+                        <h3>Plata</h3>
+                        <div class="price">$9.99 <span>USD / mes</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-users"></i> Hasta <strong>300 clientes activos</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Todas las funciones</li>
+                        </ul>
+                    </div>
+                    <div class="plan-card">
+                        
+                        <span class="plan-tag">El más completo</span>
+                        <h3>Oro</h3>
+                        <div class="price">$19.99 <span>USD / mes</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-users"></i> Hasta <strong>1.000 clientes activos</strong></li>
+                            <li><i class="fa-solid fa-check"></i> Todas las funciones</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>Cada plan dura 30 días. Si tu plan vence puedes consultar tus datos, pero para registrar clientes,
+                        pagos o citas debes renovarlo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pasos -->
+        <section class="steps-section" id="como-funciona">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Empieza en 4 pasos</h2>
+                    <p>De la descarga a tu primer cobro en minutos.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card"><span class="step-number">1</span>
+                        <h3>Crea tu cuenta</h3>
+                        <p>Elige tu tipo de negocio y tu país. Tienes 15 días gratis.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">2</span>
+                        <h3>Arma tu catálogo</h3>
+                        <p>Planes, servicios y productos, cada uno con su forma de cobro.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">3</span>
+                        <h3>Agrega tus clientes</h3>
+                        <p>Asígnales su plan y envíales su QR por WhatsApp.</p>
+                    </div>
+                    <div class="step-card"><span class="step-number">4</span>
+                        <h3>Cobra y controla</h3>
+                        <p>Mira quién debe, recuérdale con un toque y valida cada ingreso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Planco llega muy pronto</h2>
+                    <p>Escríbenos y te avisamos el día del lanzamiento en Android y iOS.</p>
+                    <div class="cta-buttons">
+                        <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20quiero%20que%20me%20avisen%20cuando%20Planco%20est%C3%A9%20disponible" target="_blank" class="btn btn-volt"><i class="fa-brands fa-whatsapp"></i>
+                            Avísame por WhatsApp</a>
+                        <a href="../" class="btn btn-outline"><i class="fa-solid fa-grip"></i> Ver otros sistemas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-image-container">
+            <img alt="Planco vista ampliada" id="lightbox-img">
+            <span class="lightbox-counter" id="lightbox-counter">1 / 15</span>
+        </div>
+        <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="brand">planco<span class="brand-dot"></span></div>
+                <p>Clientes, cobros, agenda y asistencias para negocios de servicios. Muy pronto en Android y iOS.</p>
+                <div class="social-links">
+                    <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20deseo%20informaci%C3%B3n%20de%20Planco" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:groonscolombia@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul class="footer-list">
+                    <li><i class="fa-brands fa-whatsapp"></i> +57 350 470 6990</li>
+                    <li><i class="fa-solid fa-envelope"></i> groonscolombia@gmail.com</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Colombia</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Accesos rápidos</h4>
+                <ul class="footer-list">
+                    <li><a href="#negocios">Tipos de negocio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#todas-las-funciones">Lista completa de funciones</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Otros sistemas</h4>
+                <ul class="footer-list">
+                    <li><a href="../prestabit/">PrestaBIT · Préstamos</a></li>
+                    <li><a href="../puntoventa/">PuntoVenta · Ventas e inventario</a></li>
+                    <li><a href="../#sistemas">Ver todos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Planco. Desarrollado por <a href="../">GroonS</a>. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.PV_TOTAL_FOTOS = 15;</script>
+    <script src="assets/js/planco.js?v=1"></script>
+</body>
+
+</html>

@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const showPhoto = (index) => {
         currentPhotoIndex = index;
-        lightboxImg.src = `assets/img/prestabit/${currentPhotoIndex}.jpeg`;
+        lightboxImg.src = `assets/img/${currentPhotoIndex}.jpeg`;
         if (lightboxCounter) {
             lightboxCounter.textContent = `${currentPhotoIndex} / ${totalPhotos}`;
         }
@@ -155,6 +155,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const summaryPortalPrice = document.getElementById('summary-portal-price');
     const summaryBotPrice = document.getElementById('summary-bot-price');
     const summaryStoragePrice = document.getElementById('summary-storage-price');
+    const summaryActivationPrice = document.getElementById('summary-activation-price');
+    const ORO_ACTIVATION = 10; // Pago único de activación del Plan Oro (USD)
+    const setActivation = (txt) => { if (summaryActivationPrice) summaryActivationPrice.textContent = txt; };
     const grandTotalElement = document.getElementById('grand-total');
     const summaryPeriodLabel = document.getElementById('summary-period-label');
     const btnWhatsappQuote = document.getElementById('btn-whatsapp-quote');
@@ -203,10 +206,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Cálculo según el tipo de plan
         if (selectedPlan === 'Gratis') {
             summaryPlanName.textContent = 'Gratis';
+            setActivation('No aplica');
             summaryPlanPrice.textContent = '$0 USD';
             summaryClientsPrice.textContent = 'Restringido';
             summaryPortalPrice.textContent = 'No disponible';
-            summaryBotPrice.textContent = 'No disponible';
+            if (summaryBotPrice) summaryBotPrice.textContent = 'No disponible';
             summaryStoragePrice.textContent = 'No disponible';
             summaryPeriodLabel.textContent = 'Total a pagar:';
             grandTotalElement.innerHTML = `$0 <span>USD</span>`;
@@ -218,10 +222,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (selectedPlan === 'Bronce') {
             summaryPlanName.textContent = 'Bronce (1 disp. por ruta)';
+            setActivation('No aplica');
             summaryPlanPrice.textContent = '$15 USD / año';
             summaryClientsPrice.textContent = 'Incluido (1 dispositivo)';
             summaryPortalPrice.textContent = 'No disponible';
-            summaryBotPrice.textContent = 'No disponible';
+            if (summaryBotPrice) summaryBotPrice.textContent = 'No disponible';
             summaryStoragePrice.textContent = 'Copias manuales';
             summaryPeriodLabel.textContent = 'Total anual:';
             grandTotalElement.innerHTML = `$15 <span>USD / año</span>`;
@@ -236,28 +241,30 @@ document.addEventListener('DOMContentLoaded', () => {
         // Si es PLAN ORO
         const clientsCost = currentTier.price; // Obligatorio
         const portalCost = addonPortal.checked ? 5 : 0;
-        const botCost = addonBot.checked ? 10 : 0;
+        const botCost = addonBot && addonBot.checked ? 10 : 0;
         const storageCost = storageBlocks * 2; // $2 USD por cada 100 MB
 
         const monthlyTotal = clientsCost + portalCost + botCost + storageCost;
 
         summaryPlanName.textContent = 'Plan Oro (Modular)';
+        setActivation(`$${ORO_ACTIVATION} USD`);
         summaryPlanPrice.textContent = 'Base $0 (Por consumo)';
         summaryClientsPrice.textContent = `${currentTier.label} ($${clientsCost} USD)`;
         summaryPortalPrice.textContent = addonPortal.checked ? '+$5 USD / mes' : 'No contratado';
-        summaryBotPrice.textContent = addonBot.checked ? '+$10 USD / mes' : 'No contratado';
+        if (summaryBotPrice) summaryBotPrice.textContent = botCost ? '+$10 USD / mes' : 'No contratado';
         summaryStoragePrice.textContent = `${storageBlocks * 100} MB ($${storageCost} USD)`;
 
         summaryPeriodLabel.textContent = 'Total mensual estimado:';
-        grandTotalElement.innerHTML = `$${monthlyTotal} <span>USD / mes</span>`;
+        grandTotalElement.innerHTML = `$${monthlyTotal} <span>USD / mes</span>` +
+            `<small class="total-note">Primer pago: $${monthlyTotal + ORO_ACTIVATION} USD (incluye activación)</small>`;
 
         const msg = encodeURIComponent(
             `Hola, deseo contratar el *Plan Oro* de PrestaBIT con la siguiente configuración:\n` +
             `• Clientes: ${currentTier.label} ($${clientsCost} USD/mes)\n` +
             `• Portal Web Clientes: ${addonPortal.checked ? 'Sí (+$5 USD)' : 'No'}\n` +
-            `• Bot de WhatsApp: ${addonBot.checked ? 'Sí (+$10 USD)' : 'No'}\n` +
-            `• Almacenamiento Fotos: ${storageBlocks * 100} MB ($${storageCost} USD)\n` +
-            `*Total estimado mensual: $${monthlyTotal} USD / mes*`
+                        `• Almacenamiento Fotos: ${storageBlocks * 100} MB ($${storageCost} USD)\n` +
+            `*Total estimado mensual: $${monthlyTotal} USD / mes*\n` +
+            `Activación única: $${ORO_ACTIVATION} USD`
         );
         btnWhatsappQuote.href = `https://api.whatsapp.com/send/?phone=573504706990&text=${msg}`;
     }

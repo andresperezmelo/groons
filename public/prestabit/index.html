@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrestaBIT | Sistema de Gestión y Control de Préstamos</title>
+    <meta name="description"
+        content="PrestaBIT: préstamos a cuotas o a interés, cobros por rutas, recibos por WhatsApp e impresora, contratos con firma, caja, gastos, balances y portal de clientes. Android, iOS y Web.">
+
+    <!-- Fuentes e Iconos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS del proyecto -->
+    <link rel="stylesheet" href="assets/css/prestabit.css?v=4">
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <header class="header" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand">
+                <span class="brand-badge"><i class="fa-solid fa-coins"></i></span>
+                Presta<span>BIT</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#caracteristicas" class="nav-link">Características</a>
+                <a href="#destacados" class="nav-link">Portal y Fotos</a>
+                <a href="#galeria" class="nav-link">Capturas</a>
+                <a href="#planes" class="nav-link">Planes</a>
+                <a href="#calculadora" class="nav-link">Cotizador</a>
+                <a href="#seguridad" class="nav-link">Seguridad</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="../" class="nav-link"><i class="fa-solid fa-arrow-left"></i> GroonS</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://prestabit.vercel.app/" target="_blank" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i> Versión Web
+                </a>
+                <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="chip"><i class="fa-solid fa-bolt"></i> Sistema SaaS Multiplataforma</div>
+                    <h1>El control total de tus préstamos, <span>ordenado y seguro</span>.</h1>
+                    <p>
+                        Diseñado para prestamistas independientes, cooperativas y comercios. Organiza cobranzas diarias,
+                        calcula intereses al instante y mantén sincronizados tus dispositivos en tiempo real.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=app.web.groons.prestabit&hl=es_CO"
+                            target="_blank" class="btn btn-store">
+                            <i class="fa-brands fa-google-play"></i>
+                            <div class="btn-text">
+                                <small>Disponible en</small>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                        <a href="https://apps.apple.com/co/app/prestabit/id1671026232" target="_blank"
+                            class="btn btn-store">
+                            <i class="fa-brands fa-apple"></i>
+                            <div class="btn-text">
+                                <small>Consíguelo en</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="https://prestabiit.web.app/" target="_blank" class="btn btn-store btn-store-dark">
+                            <i class="fa-solid fa-globe"></i>
+                            <div class="btn-text">
+                                <small>Acceso online</small>
+                                <strong>Plataforma Web</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h4>0 a 600+</h4>
+                            <p>Escalabilidad de Clientes</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>En la Nube</h4>
+                            <p>Sincronización Total</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Multi-Rol</h4>
+                            <p>Cobradores y Administrador</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="device-mockup">
+                        <div class="mockup-screen">
+                            <img src="assets/img/1.jpeg" alt="PrestaBIT Vista Principal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Capturas Animada (1 al 17) -->
+        <section class="gallery-section" id="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Recorrido Visual por PrestaBIT</h2>
+                    <p>La galería se mueve automáticamente. Pasa el cursor sobre una pantalla para pausarla y haz clic
+                        para ampliarla.</p>
+                </div>
+            </div>
+
+            <!-- Carrusel con auto-scroll infinito -->
+            <div class="gallery-wrapper" id="gallery-wrapper">
+                <div class="gallery-track" id="gallery-track">
+                    <!-- Tarjetas de 1 a 17 con marcos y margen propio -->
+                    <div class="gallery-card" data-index="1">
+                        <div class="card-inner"><img src="assets/img/1.jpeg" alt="Captura 1" loading="lazy">
+                        </div><span>01 / Inicio</span>
+                    </div>
+                    <div class="gallery-card" data-index="2">
+                        <div class="card-inner"><img src="assets/img/2.jpeg" alt="Captura 2" loading="lazy">
+                        </div><span>02 / Clientes</span>
+                    </div>
+                    <div class="gallery-card" data-index="3">
+                        <div class="card-inner"><img src="assets/img/3.jpeg" alt="Captura 3" loading="lazy">
+                        </div><span>03 / Abonar</span>
+                    </div>
+                    <div class="gallery-card" data-index="4">
+                        <div class="card-inner"><img src="assets/img/4.jpeg" alt="Captura 4" loading="lazy">
+                        </div><span>04 / Abonos</span>
+                    </div>
+                    <div class="gallery-card" data-index="5">
+                        <div class="card-inner"><img src="assets/img/5.jpeg" alt="Captura 5" loading="lazy">
+                        </div><span>05 / Estado</span>
+                    </div>
+                    <div class="gallery-card" data-index="6">
+                        <div class="card-inner"><img src="assets/img/6.jpeg" alt="Captura 6" loading="lazy">
+                        </div><span>06 / Opciones</span>
+                    </div>
+                    <div class="gallery-card" data-index="7">
+                        <div class="card-inner"><img src="assets/img/7.jpeg" alt="Captura 7" loading="lazy">
+                        </div><span>07 / Opciones recibo</span>
+                    </div>
+                    <div class="gallery-card" data-index="8">
+                        <div class="card-inner"><img src="assets/img/8.jpeg" alt="Captura 8" loading="lazy">
+                        </div><span>08 / Opciones recibo</span>
+                    </div>
+                    <div class="gallery-card" data-index="9">
+                        <div class="card-inner"><img src="assets/img/9.jpeg" alt="Captura 9" loading="lazy">
+                        </div><span>09 / Préstamos</span>
+                    </div>
+                    <div class="gallery-card" data-index="10">
+                        <div class="card-inner"><img src="assets/img/10.jpeg" alt="Captura 10" loading="lazy">
+                        </div><span>10 / Config Préstamos</span>
+                    </div>
+                    <div class="gallery-card" data-index="11">
+                        <div class="card-inner"><img src="assets/img/11.jpeg" alt="Captura 11" loading="lazy">
+                        </div><span>11 / Balances</span>
+                    </div>
+                    <div class="gallery-card" data-index="12">
+                        <div class="card-inner"><img src="assets/img/12.jpeg" alt="Captura 12" loading="lazy">
+                        </div><span>12 / Balances</span>
+                    </div>
+                    <div class="gallery-card" data-index="13">
+                        <div class="card-inner"><img src="assets/img/13.jpeg" alt="Captura 13" loading="lazy">
+                        </div><span>13 / Resumen</span>
+                    </div>
+                    <div class="gallery-card" data-index="14">
+                        <div class="card-inner"><img src="assets/img/14.jpeg" alt="Captura 14" loading="lazy">
+                        </div><span>14 / Ajustes</span>
+                    </div>
+                    <div class="gallery-card" data-index="15">
+                        <div class="card-inner"><img src="assets/img/15.jpeg" alt="Captura 15" loading="lazy">
+                        </div><span>15 / Portal url</span>
+                    </div>
+                    <div class="gallery-card" data-index="16">
+                        <div class="card-inner"><img src="assets/img/16.jpeg" alt="Captura 16" loading="lazy">
+                        </div><span>16 / Caja</span>
+                    </div>
+                    <div class="gallery-card" data-index="17">
+                        <div class="card-inner"><img src="assets/img/17.jpeg" alt="Captura 17" loading="lazy">
+                        </div><span>17 / Resumen</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Todo lo que incluye PrestaBIT -->
+        <section class="features" id="caracteristicas">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Todo lo que incluye PrestaBIT</h2>
+                    <p>44 funciones organizadas en 6 módulos para manejar tu negocio de préstamos de principio a
+                        fin.</p>
+                </div>
+
+                <div class="modules-grid">
+                    <a href="#lista-prestamos" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3>Préstamos</h3>
+                        <p>Crea préstamos a cuotas o a interés, con amortización, mora, cargos y contratos firmados.</p>
+                        <span class="module-count">9 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-clientes" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+                        <h3>Clientes</h3>
+                        <p>Ficha completa con fotos, ubicaciones, cupo, calificación y organización por rutas.</p>
+                        <span class="module-count">8 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-cobros" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-receipt"></i></div>
+                        <h3>Cobros y recibos</h3>
+                        <p>Registra abonos en la calle y entrega recibos al instante por WhatsApp o impresos.</p>
+                        <span class="module-count">7 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-finanzas" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Finanzas</h3>
+                        <p>Sabe cuánto ganas, cuánto debes entregar y qué tan sana está tu cartera.</p>
+                        <span class="module-count">8 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-equipo" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-user-shield"></i></div>
+                        <h3>Equipo y seguridad</h3>
+                        <p>Trabaja con cobradores y supervisores sin perder el control de tu información.</p>
+                        <span class="module-count">6 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                    <a href="#lista-extras" class="module-card">
+                        <div class="icon-box"><i class="fa-solid fa-puzzle-piece"></i></div>
+                        <h3>Portal y extras</h3>
+                        <p>Portal para tus clientes, solicitudes en línea, DataBIT e importación de datos.</p>
+                        <span class="module-count">6 funciones <i class="fa-solid fa-arrow-down"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destacados: Fotos y Portal -->
+        <section class="spotlight-section" id="destacados">
+            <div class="container spotlight-grid">
+                <article class="spotlight-card">
+                    <span class="spotlight-tag"><i class="fa-solid fa-camera"></i> Fotos de clientes</span>
+                    <h3>Toda la evidencia de cada cliente, en su ficha</h3>
+                    <p>Toma o sube fotos desde el celular y quedan guardadas en la nube, disponibles para todo tu equipo.
+                    </p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Foto del cliente para identificarlo en la calle</li>
+                        <li><i class="fa-solid fa-check"></i> Cédula, pagarés, letras y contratos firmados</li>
+                        <li><i class="fa-solid fa-check"></i> Fotos de la casa, el negocio o garantías</li>
+                        <li><i class="fa-solid fa-check"></i> Comprobantes de pago y evidencias de visita</li>
+                    </ul>
+                    <div class="spotlight-price">Add-on Plan Oro · <strong>$2 USD / mes por cada 100 MB</strong> (~280
+                        fotos)</div>
+                </article>
+
+                <article class="spotlight-card spotlight-dark">
+                    <span class="spotlight-tag"><i class="fa-solid fa-globe"></i> Portal web de clientes</span>
+                    <h3>Tus clientes consultan sus cuentas sin llamarte</h3>
+                    <p>Comparte el enlace de tu empresa y cada cliente valida su información en tiempo real desde
+                        cualquier celular.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Consultar su saldo pendiente</li>
+                        <li><i class="fa-solid fa-check"></i> Ver el historial de abonos realizados</li>
+                        <li><i class="fa-solid fa-check"></i> Conocer la fecha y valor de su próxima cuota</li>
+                        <li><i class="fa-solid fa-check"></i> Solicitar nuevos préstamos en línea</li>
+                        <li><i class="fa-solid fa-check"></i> Ver los servicios y condiciones de tu empresa</li>
+                    </ul>
+                    <div class="spotlight-price">Add-on Plan Oro · <strong>$5 USD / mes</strong></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Lista completa de funciones -->
+        <section class="full-list-section" id="todas-las-funciones">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Lista completa de funciones</h2>
+                    <p>Todo lo que tiene PrestaBIT, módulo por módulo.</p>
+                </div>
+                <div class="full-list-grid">
+                    <div class="full-list-group" id="lista-prestamos">
+                        <h3><i class="fa-solid fa-hand-holding-dollar"></i> Préstamos</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-calculator"></i>
+                                <div><strong>Préstamos a cuotas o a interés</strong><span>Plazo cerrado con cuotas, o plazo indefinido pagando solo intereses.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-scale-balanced"></i>
+                                <div><strong>4 sistemas de amortización</strong><span>Cuota fija, amortización progresiva, cuota decreciente y solo interés.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-calendar-days"></i>
+                                <div><strong>Frecuencias de pago</strong><span>Diario, semanal, quincenal o mensual.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-umbrella-beach"></i>
+                                <div><strong>Días festivos y no laborables</strong><span>No se generan cuotas en los días que tú definas.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-table-list"></i>
+                                <div><strong>Tabla de cuotas editable</strong><span>Modifica, fracciona o agrega cuotas y compártela en PDF o imagen.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-triangle-exclamation"></i>
+                                <div><strong>Mora configurable</strong><span>Penalización fija por cuota o interés diario sobre el saldo vencido.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-circle-plus"></i>
+                                <div><strong>Cargos adicionales</strong><span>Seguros, papelería u otros conceptos dentro del préstamo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-rotate"></i>
+                                <div><strong>Renovar y refinanciar</strong><span>Renueva cerrando el préstamo anterior o refinancia el saldo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-signature"></i>
+                                <div><strong>Contratos con firma digital</strong><span>Tus modelos de contrato firmados en pantalla por prestatario, fiador y prestamista.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-clientes">
+                        <h3><i class="fa-solid fa-users"></i> Clientes</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-id-card"></i>
+                                <div><strong>Ficha completa del cliente</strong><span>Cédula, teléfono, nacimiento, direcciones, notas y fiador.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-camera"></i>
+                                <div><strong>Fotos de clientes y documentos</strong><span>Foto del cliente, cédula, pagarés y evidencias guardadas en la nube.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-map-location-dot"></i>
+                                <div><strong>Ubicaciones en el mapa</strong><span>Hasta 5 ubicaciones por cliente para abrir en Maps.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-gauge-high"></i>
+                                <div><strong>Cupo de crédito</strong><span>Monto máximo por cliente y cupo por defecto para los nuevos.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i>
+                                <div><strong>Calificación de clientes</strong><span>Califica según su comportamiento de pago.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-route"></i>
+                                <div><strong>Rutas, grupos y orden de visita</strong><span>Organiza y ordena tus clientes según tu recorrido.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-user-clock"></i>
+                                <div><strong>Clientes en recuperación</strong><span>Seguimiento separado de la cartera difícil.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-cake-candles"></i>
+                                <div><strong>Cumpleaños</strong><span>Saluda por WhatsApp a quien cumple años hoy.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-cobros">
+                        <h3><i class="fa-solid fa-receipt"></i> Cobros y recibos</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-sack-dollar"></i>
+                                <div><strong>A recaudar hoy</strong><span>Cobros del día por ruta con el progreso de la jornada.</span></div>
+                            </li>
+                            <li><i class="fa-brands fa-whatsapp"></i>
+                                <div><strong>Recibos por WhatsApp</strong><span>Comprobante de cada abono con tu logo y tu mensaje.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-print"></i>
+                                <div><strong>Impresora térmica Bluetooth</strong><span>Imprime recibos e historiales desde el celular.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-bell"></i>
+                                <div><strong>Recordatorios de cobro</strong><span>Avisos programados por cliente con tu texto predeterminado.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-percent"></i>
+                                <div><strong>Descuentos</strong><span>Bonificaciones que reducen el saldo sin alterar lo abonado.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-flag-checkered"></i>
+                                <div><strong>Liquidación anticipada</strong><span>Cancela el saldo restando intereses no causados.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-clock-rotate-left"></i>
+                                <div><strong>Historial de pagos</strong><span>Línea de tiempo de abonos lista para compartir o imprimir.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-finanzas">
+                        <h3><i class="fa-solid fa-chart-line"></i> Finanzas</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-chart-pie"></i>
+                                <div><strong>Resumen financiero</strong><span>Ganancia neta, cobros y dinero a entregar, con PDF.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-cash-register"></i>
+                                <div><strong>Caja</strong><span>Saldo disponible y movimientos de los últimos 30 días.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-wallet"></i>
+                                <div><strong>Control de gastos</strong><span>Gastos por categoría y por periodo.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-chart-column"></i>
+                                <div><strong>Balances por ruta</strong><span>Rendimiento de cada ruta con reportes PDF.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-heart-pulse"></i>
+                                <div><strong>Indicadores de morosidad</strong><span>Cartera en riesgo PAR 30, PAR 60 y PAR 90.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-arrow-trend-up"></i>
+                                <div><strong>ROI y récords del negocio</strong><span>Rentabilidad mensual y mejores días de cobro.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-binoculars"></i>
+                                <div><strong>Proyección de cobro</strong><span>Lo que vas a recibir en los próximos días.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-money-check-dollar"></i>
+                                <div><strong>Pago a empleados</strong><span>Liquidación por porcentaje de lo cobrado.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-equipo">
+                        <h3><i class="fa-solid fa-user-shield"></i> Equipo y seguridad</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-users-gear"></i>
+                                <div><strong>Usuarios y permisos</strong><span>Subcuentas para supervisores, cobradores y secretarias.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-magnifying-glass-chart"></i>
+                                <div><strong>Auditoría de movimientos</strong><span>Qué usuario hizo cada transacción.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-bell"></i>
+                                <div><strong>Notificaciones en tiempo real</strong><span>Nuevos préstamos, solicitudes, cambios y eliminaciones.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-fingerprint"></i>
+                                <div><strong>Bloqueo con huella</strong><span>Acceso protegido con huella o rostro.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-wifi"></i>
+                                <div><strong>Trabajo sin conexión</strong><span>Cobra sin señal y sincroniza después.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-cloud-arrow-up"></i>
+                                <div><strong>Copias de seguridad</strong><span>Respaldos locales y en la nube con historial.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="full-list-group" id="lista-extras">
+                        <h3><i class="fa-solid fa-puzzle-piece"></i> Portal y extras</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-globe"></i>
+                                <div><strong>Portal web para clientes</strong><span>Tus clientes consultan saldo, abonos y próxima cuota.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-inbox"></i>
+                                <div><strong>Solicitudes de préstamo en línea</strong><span>Llegan desde el portal y al aprobarlas se crea el cliente.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-user-xmark"></i>
+                                <div><strong>DataBIT</strong><span>Consulta reportes de deudores por cédula y reporta a quien no paga.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-file-excel"></i>
+                                <div><strong>Importar y exportar Excel</strong><span>Carga clientes, préstamos y abonos de una vez.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-right-left"></i>
+                                <div><strong>Migración desde otras apps</strong><span>Trae tus datos de versiones anteriores u otras aplicaciones.</span></div>
+                            </li>
+                            <li><i class="fa-solid fa-building"></i>
+                                <div><strong>Marca de tu empresa</strong><span>Nombre, logo y textos en recibos, contratos y portal.</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section class="steps-section" id="como-funciona">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Empieza en 4 pasos</h2>
+                    <p>Desde la descarga hasta tu primer cobro en pocos minutos.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span class="step-number">1</span>
+                        <h3>Descarga y crea tu cuenta</h3>
+                        <p>En Android, iOS o desde la web. Empiezas con el plan gratis.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-number">2</span>
+                        <h3>Configura tu empresa</h3>
+                        <p>Agrega tu logo, rutas, días no laborables y modelos de contrato.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-number">3</span>
+                        <h3>Registra clientes y préstamos</h3>
+                        <p>Uno por uno o importándolos desde Excel u otra aplicación.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-number">4</span>
+                        <h3>Cobra y controla</h3>
+                        <p>Registra abonos, envía recibos y mira tus balances en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planes Base -->
+        <section class="pricing-section" id="planes">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Estructura de Planes</h2>
+                    <p>Selecciona el plan que mejor se adapte al tamaño y dinámica de tu cartera.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Plan Gratis -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <span class="plan-tag">Prueba / Inicio</span>
+                            <h3>Plan Gratis</h3>
+                            <div class="price">$0 <span>USD</span></div>
+                            <p>Funcionalidad restringida para probar la herramienta.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check text-green"></i> Gestión básica de préstamos</li>
+                            <li><i class="fa-solid fa-check text-green"></i> Compartir e imprimir recibos</li>
+                            <li><i class="fa-solid fa-mobile-screen text-green"></i> 1 solo dispositivo por ruta</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Sin soporte técnico personalizado
+                            </li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Sin acceso a complementos (Add-ons)
+                            </li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Respaldo manual obligatorio</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Sin recuperación ante borrado por
+                                inactividad</li>
+                        </ul>
+                        <a href="https://prestabiit.web.app/" target="_blank" class="btn btn-outline-dark">Comenzar
+                            Gratis</a>
+                    </div>
+
+                    <!-- Plan Bronce -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <span class="plan-tag text-amber">Anual Económico</span>
+                            <h3>Plan Bronce</h3>
+                            <div class="price">$15 <span>USD / año</span></div>
+                            <p>Para operaciones pequeñas que buscan control básico y estable.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check text-green"></i> Funcionalidades operativas activas</li>
+                            <li><i class="fa-solid fa-mobile-screen text-green"></i> <strong>1 solo dispositivo por
+                                    ruta</strong></li>
+                            <li><i class="fa-solid fa-triangle-exclamation text-amber"></i> <strong>Subida de copias de
+                                    seguridad manuales obligatoria</strong></li>
+                            <li><i class="fa-solid fa-check text-green"></i> Registro de gastos y bases</li>
+                            <li><i class="fa-solid fa-check text-green"></i> Balances financieros</li>
+                            <li><i class="fa-solid fa-check text-green"></i> Configuración de empresa y logo</li>
+                            <li><i class="fa-solid fa-check text-green"></i> Soporte estándar</li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Sin respaldos automáticos en la nube
+                            </li>
+                            <li class="disabled"><i class="fa-solid fa-xmark"></i> Sin rescate de datos si supera 30
+                                días inactivo</li>
+                        </ul>
+                        <a href="#calculadora" class="btn btn-outline-dark"
+                            onclick="selectPlanFromCard('Bronce')">Elegir Bronce</a>
+                    </div>
+
+                    <!-- Plan Oro (Destacado) -->
+                    <div class="plan-card featured">
+                        <div class="popular-badge">Recomendado</div>
+                        <div class="plan-header">
+                            <span class="plan-tag text-gold">Potencia Modular</span>
+                            <h3>Plan Oro</h3>
+                            <div class="price">Desde $3 <span>USD / mes</span></div>
+                            <p>Activación única de <strong>$10 USD</strong>. Después pagas por consumo: clientes
+                                obligatorio, add-ons opcionales.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fa-solid fa-check text-green"></i> Multidispositivo y multiruta sin
+                                restricciones</li>
+                            <li><i class="fa-solid fa-users-gear text-green"></i> Subcuentas para supervisores,
+                                cobradores y secretarias</li>
+                            <li><i class="fa-solid fa-laptop text-green"></i> Acceso total a la plataforma Web y a
+                                caja</li>
+                            <li><i class="fa-solid fa-users text-green"></i> <strong>Bloques de $3 USD por cada 100
+                                    clientes</strong> (máx. 600)</li>
+                            <li><i class="fa-solid fa-cloud-arrow-up text-green"></i> <strong>Copias automáticas en la
+                                    nube 24/7</strong></li>
+                            <li><i class="fa-solid fa-shield-halved text-green"></i> <strong>Único con rescate tras
+                                    borrado por inactividad (30 días)</strong></li>
+                            <li><i class="fa-solid fa-puzzle-piece text-green"></i> Add-ons: Portal web de clientes y
+                                fotos de clientes</li>
+                        </ul>
+                        <a href="#calculadora" class="btn btn-primary" onclick="selectPlanFromCard('Oro')">Cotizar Plan
+                            Oro</a>
+                    </div>
+                </div>
+
+                <!-- Aviso Importante: Regla de los 30 Días -->
+                <div class="security-alert" id="seguridad">
+                    <div class="alert-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="alert-content">
+                        <h4>Regla Importante: Acceso Mensual y Depuración del Servidor</h4>
+                        <p>
+                            <strong>Ingreso mínimo:</strong> Cada usuario debe iniciar sesión al menos <strong>1 vez
+                                cada 30 días</strong>.
+                            Si transcurren más de 30 días continuos sin actividad, el sistema ejecuta una depuración
+                            automática de seguridad y elimina los datos de los servidores.
+                        </p>
+                        <p class="alert-highlight">
+                            <i class="fa-solid fa-circle-info"></i> <strong>Protección de datos:</strong> Únicamente los
+                            usuarios con <strong>Plan Oro activo</strong> tienen derecho a solicitar y restaurar sus
+                            datos eliminados por inactividad. En las cuentas <strong>Gratis</strong> y
+                            <strong>Bronce</strong> el borrado es definitivo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculadora Interactiva de Tarifa -->
+        <section class="calculator-section" id="calculadora">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Cotizador Interactivo</h2>
+                    <p>Selecciona tu plan y adapta los módulos según el tamaño exacto de tu negocio. Disponible en Android, iOS y Web.</p>
+                </div>
+
+                <div class="calc-wrapper">
+                    <div class="calc-form">
+                        <!-- 1. Selección de Plan Base -->
+                        <div class="calc-group">
+                            <label class="calc-label">1. Selecciona tu Plan:</label>
+                            <div class="plan-selector">
+                                <label class="radio-card">
+                                    <input type="radio" name="basePlan" value="Gratis" checked>
+                                    <div class="radio-content">
+                                        <strong>Gratis</strong>
+                                        <small>$0 USD (Restringido)</small>
+                                    </div>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="basePlan" value="Bronce">
+                                    <div class="radio-content">
+                                        <strong>Bronce</strong>
+                                        <small>$15 USD / año</small>
+                                    </div>
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="basePlan" value="Oro">
+                                    <div class="radio-content">
+                                        <strong>Oro</strong>
+                                        <small>$10 activación + consumo</small>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Contenedor modular para Plan Oro -->
+                        <div id="gold-config-wrapper" class="gold-options-disabled">
+                            <!-- 2. Slider de Volumen de Clientes (Obligatorio en Oro) -->
+                            <div class="calc-group">
+                                <div class="slider-header">
+                                    <label class="calc-label" for="client-range">
+                                        2. Volumen de Clientes Activos:
+                                        <small
+                                            style="display:block; font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">
+                                            Obligatorio en Plan Oro ($3 USD por cada 100 clientes)
+                                        </small>
+                                    </label>
+                                    <span class="client-count-badge" id="client-display">0 - 100 clientes ($3
+                                        USD/mes)</span>
+                                </div>
+                                <input type="range" id="client-range" min="1" max="7" value="1" step="1"
+                                    class="custom-slider">
+
+                                <div class="slider-ticks">
+                                    <span>0-100</span>
+                                    <span>200</span>
+                                    <span>300</span>
+                                    <span>400</span>
+                                    <span>500</span>
+                                    <span>600</span>
+                                    <span>+601 (Plana)</span>
+                                </div>
+                            </div>
+
+                            <!-- 3. Módulos Adicionales Opcionales -->
+                            <div class="calc-group">
+                                <label class="calc-label">
+                                    3. Módulos Adicionales (Opcionales):
+                                    <small
+                                        style="display:block; font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">
+                                        Si no los necesitas, no los marcas y no se cobran.
+                                    </small>
+                                </label>
+
+                                <div class="addons-list">
+                                    <label class="addon-item">
+                                        <input type="checkbox" id="addon-portal">
+                                        <div class="addon-info">
+                                            <div class="addon-title">
+                                                <strong>Portal Web para Clientes</strong>
+                                                <span class="addon-price">+$5 USD / mes</span>
+                                            </div>
+                                            <p>Permite a los deudores consultar saldos, fechas de pago y solicitar
+                                                créditos desde la web.</p>
+                                        </div>
+                                    </label>
+
+
+                                    <!-- Almacenamiento de fotos -->
+                                    <div class="addon-item storage-item">
+                                        <div class="addon-info">
+                                            <div class="addon-title">
+                                                <strong>Almacenamiento de Fotos y Documentos</strong>
+                                                <span class="addon-price">+$2 USD / 100 MB</span>
+                                            </div>
+                                            <p>Guarda fotos de clientes, documentos de identidad, recibos y pagarés
+                                                firmados.</p>
+
+                                            <div class="storage-selector">
+                                                <span>Paquetes de 100 MB:</span>
+                                                <div class="counter-box">
+                                                    <button type="button" class="btn-counter"
+                                                        id="storage-minus">-</button>
+                                                    <span id="storage-blocks">0</span>
+                                                    <button type="button" class="btn-counter"
+                                                        id="storage-plus">+</button>
+                                                </div>
+                                                <span class="storage-mb" id="storage-total-mb">(0 MB = $0 USD)</span>
+                                            </div>
+
+                                            <div class="storage-estimate-box" id="storage-estimate-box">
+                                                <i class="fa-solid fa-camera"></i>
+                                                <p id="storage-photos-estimate">
+                                                    Capacidad estimada: <strong>0 fotos</strong> (~250 a 300 fotos
+                                                    promedio por cada 100 MB).
+                                                </p>
+                                                <small class="storage-disclaimer">
+                                                    *Nota: Es un cálculo aproximado. La cantidad real depende de la
+                                                    resolución, compresión y peso del archivo que suba el dispositivo.
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resumen del Total -->
+                    <div class="calc-summary">
+                        <h3>Resumen Estimado</h3>
+
+                        <div class="summary-breakdown">
+                            <div class="summary-line">
+                                <span>Plan Seleccionado:</span>
+                                <strong id="summary-plan-name" style="color:var(--white);">Gratis</strong>
+                            </div>
+                            <div class="summary-line" id="row-summary-base-price">
+                                <span>Costo Base Plan:</span>
+                                <span id="summary-plan-price">$0 USD</span>
+                            </div>
+                            <div class="summary-line" id="row-summary-activation">
+                                <span>Activación (pago único):</span>
+                                <span id="summary-activation-price">No aplica</span>
+                            </div>
+                            <div class="summary-line" id="row-summary-clients">
+                                <span>Clientes Activos:</span>
+                                <span id="summary-clients-price">No aplica</span>
+                            </div>
+                            <div class="summary-line" id="row-summary-portal">
+                                <span>Portal Clientes:</span>
+                                <span id="summary-portal-price">No contratado</span>
+                            </div>
+                            <div class="summary-line" id="row-summary-storage">
+                                <span>Fotos / Documentos:</span>
+                                <span id="summary-storage-price">0 MB ($0 USD)</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-total">
+                            <small id="summary-period-label">Total a pagar:</small>
+                            <div class="total-number" id="grand-total">$0 <span>USD</span></div>
+                        </div>
+
+                        <a id="btn-whatsapp-quote"
+                            href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20deseo%20activar%20PrestaBIT"
+                            target="_blank" class="btn btn-primary btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Contratar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Descargas Final -->
+        <section class="cta-section" id="descargar">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Lleva tus préstamos al siguiente nivel profesional</h2>
+                    <p>Comienza hoy mismo sin costo y escala tus herramientas a medida que crece tu cartera.</p>
+
+                    <div class="cta-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=app.web.groons.prestabit&hl=es_CO"
+                            target="_blank" class="btn btn-primary">
+                            <i class="fa-brands fa-google-play"></i> Android
+                        </a>
+                        <a href="https://apps.apple.com/co/app/prestabit/id1671026232" target="_blank"
+                            class="btn btn-primary">
+                            <i class="fa-brands fa-apple"></i> iOS
+                        </a>
+                        <a href="https://prestabit.vercel.app/" target="_blank" class="btn btn-outline">
+                            <i class="fa-solid fa-laptop"></i> Acceder a la Web
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Lightbox para 1 a 17 -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Anterior"><i
+                class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-image-container">
+            <img src="" alt="PrestaBIT vista ampliada" id="lightbox-img">
+            <span class="lightbox-counter" id="lightbox-counter">1 / 17</span>
+        </div>
+        <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Siguiente"><i
+                class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Pie de página con Políticas -->
+    <footer class="footer" id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="brand">
+                    <span class="brand-badge"><i class="fa-solid fa-coins"></i></span> Presta<span>BIT</span>
+                </div>
+                <p>Plataforma para el control inteligente de créditos, préstamos y cobros. Automatiza, protege y escala
+                    tu negocio. Disponible en Android, iOS y Web.</p>
+                <div class="social-links">
+                    <a href="https://api.whatsapp.com/send/?phone=573504706990&text=Hola,%20deseo%20información%20de%20PrestaBIT"
+                        target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:groonscolombia@gmail.com" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto Directo</h4>
+                <ul class="footer-list">
+                    <li><i class="fa-solid fa-phone"></i> +57 350 470 6990</li>
+                    <li><i class="fa-solid fa-envelope"></i> groonscolombia@gmail.com</li>
+                    <li><i class="fa-solid fa-map-pin"></i> Colombia</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Accesos Rápidos</h4>
+                <ul class="footer-list">
+                    <li><a href="../">Sistemas GroonS</a></li>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#destacados">Portal de clientes y fotos</a></li>
+                    <li><a href="#todas-las-funciones">Lista completa de funciones</a></li>
+                    <li><a href="#galeria">Capturas de Pantalla</a></li>
+                    <li><a href="#planes">Planes y Precios</a></li>
+                    <li><a href="#calculadora">Cotizador de Planes</a></li>
+                    <li><a href="#como-funciona">Cómo empezar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Políticas de Privacidad</h4>
+                <p class="small-text">Consulta las políticas legales y tratamiento de información de nuestros
+                    aplicativos:</p>
+                <ul class="footer-list">
+                    <li><a href="../apps/prestabit/politicas/politicas.html"><i
+                                class="fa-solid fa-file-shield text-green"></i> Política PrestaBIT</a></li>
+                    <li><a href="../apps/prestacop/politicas/politicas.html"><i
+                                class="fa-solid fa-file-shield text-green"></i> Política PrestaCOP</a></li>
+                    <li><a href="../apps/prestagroons/politicas/politicas.html"><i
+                                class="fa-solid fa-file-shield text-green"></i> Política PrestaGroons</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 PrestaBIT. Desarrollado por <a href="../">GroonS</a>. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="assets/js/prestabit.js?v=4"></script>
+</body>
+
+</html>
