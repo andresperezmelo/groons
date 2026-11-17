@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isNaN(fecha)) return '';
         const fechaTxt = fecha.toLocaleDateString('es-CO', { day: 'numeric', month: 'long', year: 'numeric' });
         return `<div class="countdown" data-launch="${fecha.toISOString()}">
-                    <div class="countdown-label"><i class="fa-regular fa-calendar"></i> Lanzamiento: ${esc(fechaTxt)}</div>
+                    <div class="countdown-label"><i class="fa-regular fa-calendar"></i> ${esc(s.lanzamientoTexto || 'Lanzamiento')}: ${esc(fechaTxt)}</div>
                     <div class="countdown-units">
                         <div><strong data-u="d">--</strong><span>días</span></div>
                         <div><strong data-u="h">--</strong><span>horas</span></div>

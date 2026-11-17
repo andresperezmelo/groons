@@ -16,6 +16,8 @@
      lanzamiento -> (OPCIONAL) fecha/hora de lanzamiento para mostrar un
                     contador regresivo. Formato: '2026-12-15T08:00:00-05:00'
                     Si se deja en null no se muestra contador.
+     lanzamientoTexto -> (OPCIONAL) qué se lanza ese día, ej. 'Beta en Play Store'.
+                    Si no se pone dice 'Lanzamiento'.
    ========================================================================== */
 window.SISTEMAS_GROONS = [
     {
@@ -57,7 +59,8 @@ window.SISTEMAS_GROONS = [
         enlaces: {
             pagina: 'puntoventa/'
         },
-        lanzamiento: null
+        lanzamiento: '2026-12-02T08:00:00-05:00',
+        lanzamientoTexto: 'Beta en Play Store'
     },
     {
         id: 'planco',
