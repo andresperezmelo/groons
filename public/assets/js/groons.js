@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${countdownBlock(s)}
             <div class="platforms">${platformChips(s)}</div>
             <div class="system-card-actions">
+                ${s.enlaces && s.enlaces.android ? `<a href="${esc(s.enlaces.android)}" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-brands fa-google-play"></i> ${esc(s.notaDescarga || 'Descargar en Android')}</a>` : ''}
                 ${s.enlaces && s.enlaces.pagina ? `<a href="${esc(s.enlaces.pagina)}" class="btn btn-outline-dark btn-sm">Ver más</a>` : ''}
                 <a href="https://api.whatsapp.com/send/?phone=573504706990&text=${encodeURIComponent(`Hola, quiero que me avisen cuando ${s.nombre} esté disponible.`)}"
                    target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="fa-regular fa-bell"></i> Avísame</a>

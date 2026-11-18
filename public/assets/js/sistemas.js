@@ -57,8 +57,11 @@ window.SISTEMAS_GROONS = [
         destacados: [],
         plataformas: ['android', 'ios'],
         enlaces: {
-            pagina: 'puntoventa/'
+            pagina: 'puntoventa/',
+            android: 'https://play.google.com/store/apps/details?id=co.com.groons.puntoventa&hl=es_CO'
         },
+        // Texto opcional para mostrar junto al botón de la tienda en "Próximamente"
+        notaDescarga: 'Prueba abierta en Android',
         lanzamiento: '2026-12-02T08:00:00-05:00',
         lanzamientoTexto: 'Beta en Play Store'
     },
